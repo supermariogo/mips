@@ -1,0 +1,58 @@
+*design* DebussyLib (btIdent 2007.01)
+Command arguments:  /export/homeO3/zmao/vhdl/mlite_pack.vhd  /export/homeO3/zmao/vhdl/alu.vhd  /export/homeO3/zmao/vhdl/bus_mux.vhd  /export/homeO3/zmao/vhdl/cache.vhd  /export/homeO3/zmao/vhdl/control.vhd  /export/homeO3/zmao/vhdl/ddr_ctrl.vhd  /export/homeO3/zmao/vhdl/eth_dma.vhd  /export/homeO3/zmao/vhdl/mem_ctrl.vhd  /export/homeO3/zmao/vhdl/mlite_cpu.vhd  /export/homeO3/zmao/vhdl/mult.vhd  /export/homeO3/zmao/vhdl/mult_tb.vhd  /export/homeO3/zmao/vhdl/pc_next.vhd  /export/homeO3/zmao/vhdl/pipeline.vhd  /export/homeO3/zmao/vhdl/plasma.vhd  /export/homeO3/zmao/vhdl/plasma_3e.vhd  /export/homeO3/zmao/vhdl/plasma_if.vhd  /export/homeO3/zmao/vhdl/ram.vhd  /export/homeO3/zmao/vhdl/ram_image.vhd  /export/homeO3/zmao/vhdl/ram_xilinx.vhd  /export/homeO3/zmao/vhdl/reg_bank.vhd  /export/homeO3/zmao/vhdl/shifter.vhd  /export/homeO3/zmao/vhdl/tbench.vhd  /export/homeO3/zmao/vhdl/uart.vhd  -93 
+-- Loading package standard.
+-- Loading package TEXTIO.
+-- Loading package std_logic_1164.
+-- Compile package mlite_pack.
+-- Compile package body mlite_pack.
+-- Compile entity alu.
+-- Compile architecture logic of alu.
+-- Compile entity bus_mux.
+-- Compile architecture logic of bus_mux.
+-- Loading package STD_LOGIC_UNSIGNED.
+-- Loading package VCOMPONENTS.
+-- Compile entity cache.
+-- Compile architecture logic of cache.
+-- Compile entity control.
+-- Compile architecture logic of control.
+-- Loading package std_logic_arith.
+-- Compile entity ddr_ctrl.
+-- Compile architecture logic of ddr_ctrl.
+-- Compile entity eth_dma.
+-- Compile architecture logic of eth_dma.
+-- Compile entity mem_ctrl.
+-- Compile architecture logic of mem_ctrl.
+-- Compile entity mlite_cpu.
+-- Compile architecture logic of mlite_cpu.
+-- Compile entity mult.
+-- Compile architecture logic of mult.
+-- Compile entity mult_tb.
+-- Compile architecture test of mult_tb.
+-- Compile entity pc_next.
+-- Compile architecture logic of pc_next.
+-- Compile entity pipeline.
+-- Compile architecture logic of pipeline.
+-- Compile entity plasma.
+-- Compile architecture logic of plasma.
+-- Compile entity plasma_3e.
+-- Compile architecture logic of plasma_3e.
+-- Compile entity plasma_if.
+-- Compile architecture logic of plasma_if.
+-- Loading package ATTRIBUTES.
+-- Loading package std_logic_misc.
+-- Loading package STD_LOGIC_TEXTIO.
+-- Compile entity ram.
+-- Compile architecture logic of ram.
+-- Compile entity ram.
+-- Compile architecture logic of ram.
+-- Compile entity ram.
+-- Compile architecture logic of ram.
+-- Compile entity reg_bank.
+-- Compile architecture ram_block of reg_bank.
+-- Compile entity shifter.
+-- Compile architecture logic of shifter.
+-- Compile entity tbench.
+-- Compile architecture logic of tbench.
+-- Compile entity uart.
+-- Compile architecture logic of uart.
+Total	0 error(s),   0 warning(s)

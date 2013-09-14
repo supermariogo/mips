@@ -1,0 +1,104 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 4M bytes [need 8M bytes if disable swap]
+
+used block: 525 [memory(462) file(63)]
+                 [ 8K(461) 64K(64) { total 8M bytes } ]
+overhead: (34984) bytes for (525) blocks [Average: (66) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 64(times) 3M(bytes) [267741 bytes compressed data from file]
+access => 681174(times) 7069M(bytes)
+          [hit ratio: 99.9906%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/export/homeO3/zmao/vhdl/debussyLog)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (3)
+closeHead: (1)
+closeTail: (2)
+openCnt: (1)
+fid(2): fd(13)fileName(/export/homeO3/zmao/vhdl/debussyLog/_swap_0001)
+	lastModTime(0) curModTime(1366021439)
+	mode(w+b)	hot(0) cool(1) pos(0)
+fid(1): fd(0)fileName(NULL)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Mon Apr 15 18:24:10 2013
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 4M bytes [need 8M bytes if disable swap]
+
+used block: 525 [memory(462) file(63)]
+                 [ 8K(461) 64K(64) { total 8M bytes } ]
+overhead: (34984) bytes for (525) blocks [Average: (66) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 64(times) 3M(bytes) [267741 bytes compressed data from file]
+access => 681174(times) 7069M(bytes)
+          [hit ratio: 99.9906%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/export/homeO3/zmao/vhdl/debussyLog)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (3)
+closeHead: (0)
+closeTail: (0)
+openCnt: (0)
+fid(2): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Mon Apr 15 18:24:35 2013
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 4M bytes [need 8M bytes if disable swap]
+
+used block: 525 [memory(462) file(63)]
+                 [ 8K(461) 64K(64) { total 8M bytes } ]
+overhead: (34984) bytes for (525) blocks [Average: (66) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 64(times) 3M(bytes) [267741 bytes compressed data from file]
+access => 681174(times) 7069M(bytes)
+          [hit ratio: 99.9906%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/export/homeO3/zmao/vhdl/debussyLog)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (3)
+closeHead: (0)
+closeTail: (0)
+openCnt: (0)
+fid(2): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0)fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)

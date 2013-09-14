@@ -1,0 +1,533 @@
+#!/bin/bash 
+# prune
+
+# checking the environment varibles
+if [ -z "${WORK_DIR}" ]; then
+   echo " **** ERROR"
+   echo " you do not set the env varible WORK_DIR"
+   echo " please source .bashrc file in your WORK HOME"
+   echo
+fi
+
+# set environment
+export DEBUSSY_PLI="${DEBUSSY_HOME}/share/PLI"
+export PRUNE_DIR="${WORK_DIR}/prune"
+export SIM_DIR="${WORK_DIR}/sim"
+export SRC_DIR="${WORK_DIR}/src"
+export SYN_DIR="${WORK_DIR}/syn"
+export TECH_VERILOG="smic18.v"
+export TOP_DESIGN="controller"
+export TEST_BENCH="tb_controller"
+export TEST_BENCH_FILE="tb_controller.vhd"
+export TEST_BENCH_FSDB="tb_controller.fsdb"
+
+
+# initiate the parameter 
+hpFlag="0"
+
+# invoke debussy at different level
+rdFlag="0"
+sdFlag="0"
+ldFlag="0"
+
+# invoke compile at different level
+rcFlag="0"
+scFlag="0"
+lcFlag="0"
+
+# invoke simulation at different level
+rsFlag="0"
+ssFlag="0"
+lsFlag="0"
+
+# invoke clean at different level
+rcnFlag="0"
+scnFlag="0"
+lcnFlag="0"
+acnFlag="0" # all clean
+
+if [ $# -lt 1 ]; then
+   hpFlag="1"
+fi
+
+# 
+# analyze the option
+# 
+opt=$1
+until [ -z "${opt}" ]
+do
+  case "${opt}" in
+     "-h"|"--help"       ) hpFlag="1"
+     ;;
+     "-rd"|"--rdebussy"  ) rdFlag="1"
+     ;;
+     "-sd"|"--sdebussy"  ) sdFlag="1"
+     ;;
+     "-ld"|"--ldebussy"  ) ldFlag="1"
+     ;;
+     "-s"|"--simulator"  ) 
+        shift
+        simulator=$1
+     ;;
+     "-syn"|"--synthesis"  ) 
+        synFlag="1"
+     ;;
+     "-l"|"--list"  ) 
+        listFlag="1"
+     ;;
+     "-cosim"|"--cosimulation"  ) 
+        cosimFlag="1"
+        shift
+        netlist=$1
+        if [ "${netlist}" = "-l" -o "${netlist}" = "--list" ]; then
+           listFlag="1"
+        fi
+     ;;
+     "-sppt"|"--spptrace"  ) 
+        spptFlag="1"
+        shift
+        init_seedvalue=$1
+        shift
+        trace_num=$1
+        shift
+        trace_dir=`dirname $1`
+     ;;
+     "-sxppt"|"--sxpptrace"  ) 
+        sxpptFlag="1"
+        src_dir="${WORK_DIR}/spi"
+        tar_dir="${WORK_DIR}/spi"
+        shift
+        start_num=$1
+        shift
+        trace_num=$1
+        shift
+        hier_num=$1
+     ;;
+     "-psxppt"|"--psxpptrace"  ) 
+        psxpptFlag="1"
+        src_dir="${WORK_DIR}/spi"
+        tar_dir="${WORK_DIR}/spi"
+        shift
+        start_num=$1
+        shift
+        trace_num=$1
+        shift
+        start_time=$1
+        shift
+        end_time=$1
+     ;;
+     "-ppt"|"--pptrace"  ) 
+        pptFlag="1"
+        shift
+        init_seedvalue=$1
+        shift
+        trace_num=$1
+        shift
+        trace_dir=`dirname $1`
+     ;;
+     "-xppt"|"--xpptrace"  ) 
+        xpptFlag="1"
+        src_dir="${WORK_DIR}/ppt"
+        tar_dir="${WORK_DIR}/ppt"
+        shift
+        start_num=$1
+        shift
+        trace_num=$1
+        shift
+        hier_num=$1
+     ;;
+     "-pxppt"|"--pxpptrace"  ) 
+        pxpptFlag="1"
+        src_dir="${WORK_DIR}/ppt"
+        tar_dir="${WORK_DIR}/ppt"
+        shift
+        start_num=$1
+        shift
+        trace_num=$1
+        shift
+        start_time=$1
+        shift
+        end_time=$1
+     ;;
+     "-rc"|"--rcompile"  ) rcFlag="1"
+     ;;
+     "-sc"|"--scompile"  ) scFlag="1"
+     ;;
+     "-lc"|"--lcompile"  ) lcFlag="1"
+     ;;
+     "-rs"|"--rsim"      ) rsFlag="1"
+     ;;
+     "-ss"|"--ssim"      ) ssFlag="1"
+     ;;
+     "-ls"|"--lsim"      ) lsFlag="1"
+     ;;
+     "-acn"|"--aclean"   ) acnFlag="1"
+     ;;
+     "-rcn"|"--rclean"   ) rcnFlag="1"
+     ;;
+     "-scn"|"--sclean"   ) scnFlag="1"
+     ;;
+     "-lcn"|"--lclean"   ) lcnFlag="1"
+     ;;
+     *                   ) hpFlag="1" 
+     ;;
+  esac
+  shift
+  opt=$1
+done
+
+#
+# show the help message
+#
+if [ "${hpFlag}" = "1" ]; then
+   echo " Usage:"
+   echo "       prune [OPTIONs]"
+   echo " "
+   echo " Options:"
+   echo " "
+   echo " -h     | --help         : Show you helpful message"
+   echo " -rd    | --rdebussy     : Use the debussy software at RTL level"
+   echo " -sd    | --sdebussy     : Use the debussy software at SYN level"
+   echo " -ld    | --ldebussy     : Use the debussy software at LAYOUT level"
+   echo " -s     | --simulator    : Use the selected simulator"
+   echo "                           eg. -s modelsim "
+   echo " -syn   | --synthesis    : Synthesize the core"
+   echo " -cosim | --cosimulation : Co-simulation with NanoSim/VCS"
+   echo "                           eg. -cosim -l"
+   echo "                           list all HSPICE netlist supported"
+   echo "                           eg. -cosim hspice_netlist.sp"
+   echo "                           Co-simulation with hspice_netlist.sp"
+   echo " -sppt  | --spptrace     : Run NanoSim trace with init_seedvalue and trace number"
+   echo "                           eg. -sppt init_seedvalue trace_num running_dir"
+   echo "                           eg. -sppt 3 100 ."
+   echo "                           100 traces started from 3 will be generated in the directory"
+   echo "                           ${WORK_DIR}/spi"
+   echo " -sxppt | --sxpptrace    : Run trace post-processing with trace num #1 & hier num #2"
+   echo "                           argument start_num starts from 0"
+   echo "                           eg. -sxppt start_num trace_num hier_num"
+   echo "                           eg. -sxppt 3 100 2"
+   echo "                           100 traces started from 3 will be extracted & processed"
+   echo "                           in the directory ${WORK_DIR}/spi"
+   echo " -psxppt | --psxpptrace  : Run x.txt file post-processing for SPICE simulation"
+   echo "                           argument start_num starts from 0"
+   echo "                           argument start_time consults x.txt file"
+   echo "                           eg. -psxppt start_num trace_num start_time start_time"
+   echo "                           eg. -psxppt 0 100 3000 3200"
+   echo "                           100 traces started from 0 will be extracted & processed at time [3000,3200]"
+   echo "                           in the directory ${WORK_DIR}/spi"
+   echo " -ppt  | --pptrace       : Run primepower trace with init_seedvalue and trace number #"
+   echo "                           eg. -ppt init_seedvalue trace_num running_dir"
+   echo "                           eg. -ppt 3 100 ."
+   echo "                           100 traces started from 3 will be generated in the directory"
+   echo "                           ${WORK_DIR}/ppt"
+   echo " -xppt | --xpptrace      : Run trace post-processing with trace num #1 & hier num #2"
+   echo "                           argument start_num starts from 0"
+   echo "                           eg. -xppt start_num trace_num hier_num"
+   echo "                           eg. -xppt 3 100 2"
+   echo "                           100 traces started from 3 will be extracted & processed in"
+   echo "                           the directory ${WORK_DIR}/ppt"
+   echo " -pxppt | --pxpptrace    : Run x.txt file post-processing for SPICE simulation"
+   echo "                           argument start_num starts from 0"
+   echo "                           argument start_time consults x.txt file"
+   echo "                           eg. -pxppt start_num trace_num start_time start_time"
+   echo "                           eg. -pxppt 0 100 3000 3200"
+   echo "                           100 traces started from 0 will be extracted & processed at time [3000,3200]"
+   echo "                           in the directory ${WORK_DIR}/ppt"
+   echo " -rc   | --rcompile      : Only compile at RTL level"
+   echo " -sc   | --scompile      : Only compile at SYN level"
+   echo " -lc   | --lcompile      : Only compile at LAYOUT level"
+   echo " -rs   | --rsim          : Simulation at RTL level"
+   echo " -ss   | --ssim          : Simulation at SYN level"
+   echo " -ls   | --lsim          : Simulation at LAYOUT level"
+   echo " -rcn  | --rclean        : Clear your temporary files at RTL level"
+   echo " -scn  | --sclean        : Clear your temporary files at SYN level"
+   echo " -lcn  | --lclean        : Clear your temporary files at LAYOUT level"
+   echo " -acn  | --aclean        : Clear all your temporary files"
+   echo ""
+fi
+
+if [ "${simulator:=modelsim}" = "modelsim" ]; then #default simulator is modelsim
+   if [ "${rcFlag}" = "1" ]; then     #rtl compile
+      cd ${WORK_DIR}/prune            
+      if [ ! -e "running" ]; then
+         mkdir running
+      fi
+      cd ${WORK_DIR}/prune/running   
+      if [ ! -e "runsim_rtl" ]; then
+         mkdir runsim_rtl
+	 cp -f ../../src/novas_fli.so ./runsim_rtl/   # vhdl need novas_fli.so to compile navas.vhdl (in current work path)
+      fi
+      cd ${WORK_DIR}/prune/running/runsim_rtl
+      vlib work
+      vcom -work work ${SRC_DIR}/*.vhd
+                      
+   elif [ "${rsFlag}" = "1" ]; then
+      cd ${WORK_DIR}/prune
+      if [ ! -e "running" ]; then
+         mkdir running
+      fi
+      cd ${WORK_DIR}/prune/running
+      if [ ! -e "runsim_rtl" ]; then
+         mkdir runsim_rtl
+	 cp -f ../../src/novas_fli.so ./runsim_rtl/
+      fi
+      cd ${WORK_DIR}/prune/running/runsim_rtl/
+      vlib work
+      vcom -work work ${SRC_DIR}/*.vhd
+      vsim -c -lib work ${TEST_BENCH} -do "run -all; q"
+
+     # vlog -work work +incdir+${SRC_DIR} \
+      #                +incdir+${SIM_DIR} \
+       #               -v ${SIM_DIR}/${TECH_VERILOG} \
+        #              -f ${SIM_DIR}/vflist      
+   elif [ "${scFlag}" = "1" ]; then
+      cd ${WORK_DIR}/prune
+      if [ ! -e "running" ]; then
+         mkdir running
+      fi
+      cd ${WORK_DIR}/prune/running
+      if [ ! -e "runsim_postsyn" ]; then
+         mkdir runsim_postsyn
+      fi
+      cd ${WORK_DIR}/prune/running/runsim_postsyn
+      vlib work
+      vlog -work work +incdir+${SRC_DIR} \
+                      +incdir+${SIM_DIR} \
+                      -v ${SIM_DIR}/${TECH_VERILOG} \
+                      ${SYN_DIR}/${TOP_DESIGN}_mapped.v \
+                      ${SIM_DIR}/${TEST_BENCH}.v
+   elif [ "${ssFlag}" = "1" ]; then
+      cd ${WORK_DIR}/prune
+      if [ ! -e "running" ]; then
+         mkdir running
+      fi
+      cd ${WORK_DIR}/prune/running
+      if [ ! -e "runsim_postsyn" ]; then
+         mkdir runsim_postsyn
+      fi
+      cd ${WORK_DIR}/prune/running/runsim_postsyn
+      vlib work
+      vlog -work work +incdir+${SRC_DIR} \
+                      +incdir+${SIM_DIR} \
+                      -v ${SIM_DIR}/${TECH_VERILOG} \
+                      ${SYN_DIR}/${TOP_DESIGN}_mapped.v \
+                      ${SIM_DIR}/${TEST_BENCH}.v
+      vsim -c +nowarnTSCALE -lib work ${TEST_BENCH} -sdftyp dut="${SYN_DIR}/${TOP_DESIGN}.sdf" -do "run -all; quit"
+   elif [ "${lcFlag}" = "1" ]; then
+      echo ""
+      echo "LAYOUT simulator is not supported now, Sorry!!!"
+      echo ""
+   elif [ "${lsFlag}" = "1" ]; then
+      echo ""
+      echo "LAYOUT simulator is not supported now, Sorry!!!"
+      echo ""
+   fi
+elif [ "${simulator}" = "vcs" ]; then
+   echo ""
+   echo "VCS simulator is not supported now, Sorry!!!"
+   echo ""
+fi
+
+#
+# debussy
+#
+if [ "${rdFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ ! -e "running" ]; then
+      mkdir running
+   fi
+   cd ${WORK_DIR}/prune/running
+   if [ ! -e "rundebussy_rtl" ]; then
+      mkdir rundebussy_rtl
+   fi
+   cd ${WORK_DIR}/prune/running/rundebussy_rtl
+   cp -f ../runsim_rtl/${TEST_BENCH_FSDB} ./
+   debussy -2000 -VHDL ${SRC_DIR}/*.vhd   #-top ${SRC_DIR}/${TEST_BENCH}  &
+   #nWave -ssf ${TEST_BENCH_FSDB} &	
+#debussy -2001 +incdir+${SRC_DIR} \
+#           +incdir+${SIM_DIR} \
+#           -v ${SIM_DIR}/${TECH_VERILOG} \
+#           -f ${WORK_DIR}/sim/vflist
+elif [ "${sdFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ ! -e "running" ]; then
+      mkdir running
+   fi
+   cd ${WORK_DIR}/prune/running
+   if [ ! -e "rundebussy_postsyn" ]; then
+      mkdir rundebussy_postsyn
+   fi
+   cd ${WORK_DIR}/prune/running/rundebussy_postsyn
+   debussy -2001 +incdir+${SRC_DIR} \
+                 +incdir+${SIM_DIR} \
+                 -v ${SIM_DIR}/${TECH_VERILOG} \
+                 ${SYN_DIR}/${TOP_DESIGN}_mapped.v \
+                 ${SIM_DIR}/${TEST_BENCH}.v
+elif [ "${ldFlag}" = "1" ]; then
+   echo ""
+   echo "LAYOUT debussy is not supported now, Sorry!!!"
+   echo ""
+fi
+
+if [ "${synFlag}" = "1" ]; then
+   cd ${WORK_DIR}/syn
+   dc_shell-t -f rundc.tcl | tee rundc.log
+fi
+
+if [ "${cosimFlag}" = "1" -a "${listFlag}" = "1" ]; then
+   cd ${WORK_DIR}/spi
+   ls -1 *niv*.sp
+fi
+
+if [ "${cosimFlag}" = "1" -a "${listFlag}" != "1" ]; then
+   cd ${WORK_DIR}/spi
+   echo "${netlist}" | grep -q "scell"
+   if [ $? -eq 0 ]; then
+     scell="1"
+   else
+     scell="0"
+   fi
+   if [ "${scell}" = "1" ]; then
+     vflist="round_scell_niv_tb.v round_scell_niv_wrapper.v"
+     cfg="cfg_scell.niv"
+   else
+     vflist="round_drail_niv_tb.v round_drail_niv_wrapper.v"
+     cfg="cfg_drail.niv"
+   fi
+   sed -e "s/round.*\.sp/${netlist}/g" vcsAD.init >tmp
+   sed -e "s/cfg.*\.niv/${cfg}/g" tmp >vcsAD.init
+   rm -fr tmp
+   vcs ${vflist} +ad=vcsAD.init \
+   -P ${NOVAS_HOME}/debussy2007.01/share/PLI/vcs2006.06/LINUX/novas.tab \
+   ${NOVAS_HOME}/debussy2007.01/share/PLI/vcs2006.06/LINUX/pli.a \
+   -l runniv.log
+   ./simv
+fi
+
+if [ "${spptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/spi
+   end_seedvalue=`expr ${trace_num} + ${init_seedvalue}`
+   seedvalue=${init_seedvalue}
+   export TRACEFILE="${seedvalue}"
+   rm -fr *.txt *.out 
+   if [ ! -f "simv" ]; then
+      echo "Warning: simv executable doesn't exist!"
+      echo "Please run \"prune -cosim xxx.sp\" to generate simv executable!"
+      exit 2
+   fi
+   while [ ${seedvalue} != "${end_seedvalue}" ]
+   do
+      ./simv +seed+${seedvalue}
+      mv nanosim.out ${seedvalue}.out
+      seedvalue=`expr ${seedvalue} + 1`
+   done
+fi
+
+if [ "${sxpptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/spi
+   xppt.pl -src ${src_dir} -tar ${tar_dir} -snum ${start_num} -tnum ${trace_num} -hnum ${hier_num}
+fi
+
+if [ "${psxpptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/spi
+   pxppt.pl ${start_num} ${trace_num} ${start_time} ${end_time}
+fi
+
+if [ "${pptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/ppt
+   end_seedvalue=`expr ${trace_num} + ${init_seedvalue}`
+   seedvalue=${init_seedvalue}
+   export TRACEFILE="${seedvalue}"
+   make clean
+   #rm -fr plain.txt cipher.txt
+   vlib work
+   vlog -work work +incdir+${SRC_DIR} \
+        +incdir+${SIM_DIR} \
+        -v ${SIM_DIR}/${TECH_VERILOG} \
+        ${SYN_DIR}/${TOP_DESIGN}_mapped.v \
+        ${SIM_DIR}/${TEST_BENCH}.v
+   while [ ${seedvalue} != "${end_seedvalue}" ]
+   do
+      TRACEFILE="${trace_dir}/${seedvalue}"
+      vsim -c +nowarnTSCALE -lib work ${TEST_BENCH} +seed+${seedvalue} \
+           -sdftyp dut="${SYN_DIR}/${TOP_DESIGN}.sdf" -do "run -all; quit"
+      #pp_shell -f ./runpp.tcl
+      pt_shell -f ./runpt.tcl
+      seedvalue=`expr ${seedvalue} + 1`
+   done
+fi
+
+if [ "${xpptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/ppt
+   xppt.pl -src ${src_dir} -tar ${tar_dir} -snum ${start_num} -tnum ${trace_num} -hnum ${hier_num}
+fi
+
+if [ "${pxpptFlag}" = "1" ]; then
+   cd ${WORK_DIR}/ppt
+   pxppt.pl ${start_num} ${trace_num} ${start_time} ${end_time}
+fi
+
+#
+# clean temp file
+#
+if [ "${acnFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ -e "running" ]; then
+      rm -rf running
+   fi
+   cd ${WORK_DIR}
+   if [ -e "syn" ]; then
+      cd syn
+      if [ -e "Makefile" ]; then
+         make clean
+      fi
+   fi
+   cd ${WORK_DIR}
+   if [ -e "layout" ]; then
+      cd layout
+      if [ -e "Makefile" ]; then
+         make clean
+      fi
+   fi
+fi
+if [ "${rcnFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ -e "running" ]; then
+      cd running
+   fi
+   if [ -e "runsim_rtl" ]; then
+      rm -rf runsim_rtl
+   fi
+   if [ -e "rundebussy_rtl" ]; then
+      rm -rf rundebussy_rtl
+   fi
+fi
+if [ "${scnFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ -e "running" ]; then
+      cd running
+   fi
+   if [ -e "runsim_postsyn" ]; then
+      rm -rf runsim_postsyn
+   fi
+   if [ -e "rundebussy_postsyn" ]; then
+      rm -rf rundebussy_postsyn
+   fi
+   cd ${WORK_DIR}/syn
+   make clean
+fi
+if [ "${lcnFlag}" = "1" ]; then
+   cd ${WORK_DIR}/prune
+   if [ -e "running" ]; then
+      cd running
+   fi
+   if [ -e "runsim_postlayout" ]; then
+      rm -rf runsim_postlayout
+   fi
+   if [ -e "rundebussy_postlayout" ]; then
+      rm -rf rundebussy_postlayout
+   fi
+   cd ${WORK_DIR}/layout
+   make clean
+fi
+

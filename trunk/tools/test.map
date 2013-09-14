@@ -1,0 +1,227 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+InitStack           0x200             boot.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x10000000
+LOAD boot.o
+LOAD hello.o
+LOAD no_os.o
+
+.text           0x10000000      0x3a4
+                0x10000000                _ftext=.
+ *(.text)
+ .text          0x10000000      0x200 boot.o
+                0x100001a8                longjmp
+                0x10000000                entry
+                0x10000170                setjmp
+                0x10000134                OS_AsmInterruptInit
+                0x100001e0                OS_AsmMult
+                0x1000003c                interrupt_service_routine
+                0x100001f4                OS_Syscall
+                0x10000128                OS_AsmInterruptEnable
+ .text          0x10000200       0x38 hello.o
+                0x10000200                main
+ .text          0x10000238      0x16c no_os.o
+                0x10000238                putchar
+                0x1000027c                puts
+                0x10000364                kbhit
+                0x10000378                getch
+                0x10000344                OS_InterruptServiceRoutine
+                0x100002e8                print_hex
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+                0x100003a4                _ecode=.
+
+.reginfo        0x100003a4       0x18
+ *(.reginfo)
+ .reginfo       0x100003a4       0x18 boot.o
+ .reginfo       0x100003bc       0x18 hello.o
+ .reginfo       0x100003bc       0x18 no_os.o
+
+.ctors
+ *(.ctors)
+
+.dtors
+ *(.dtors)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.sdeinit
+ *(.sdeinit)
+
+.sdefini
+ *(.sdefini)
+
+.rodata         0x100003bc        0xe
+ *(.rodata)
+ .rodata        0x100003bc        0xe hello.o
+ *(.rdata)
+ *(.gnu.linkonce.r*)
+
+.rodata1
+ *(.rodata1)
+                0x100003ca                _etext=.
+                0x100003ca                PROVIDE (etext, .)
+
+.data           0x100003ca        0x0
+                0x100003ca                _fdata=.
+ *(.data)
+ *(.gnu.linkonce.d*)
+
+.data1
+ *(.data1)
+                0x100083ba                _gp=(.+0x7ff0)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata
+ *(.sdata)
+ *(.gnu.linkonce.s*)
+                0x100003ca                _edata=.
+                0x100003ca                PROVIDE (edata, .)
+                0x100003d0                .=ALIGN(0x8)
+                0x100003ca                __bss_start=.
+                0x100003d0                _fbss=__bss_start
+
+.sbss
+ *(.sbss)
+ *(.scommon)
+
+.bss            0x100003d0      0x200
+ *(.dynbss)
+ *(.bss)
+ *(COMMON)
+ COMMON         0x100003d0      0x200 boot.o
+                0x100003d0                InitStack
+                0x100005d0                _end=.
+                0x100005d0                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.mdebug
+ *(.mdebug)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.sdata
+ *(.rel.sdata)
+ *(.rel.gnu.linkonce.s*)
+
+.rela.sdata
+ *(.rela.sdata)
+ *(.rela.gnu.linkonce.s*)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.gnu.linkonce.r*)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+OUTPUT(test.axf elf32-bigmips)

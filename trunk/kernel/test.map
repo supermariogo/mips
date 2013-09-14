@@ -1,0 +1,456 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+InitStack           0x200             boot.o
+Global              0x4               rtos_test.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x10000000
+LOAD boot.o
+LOAD rtos.o
+LOAD libc.o
+LOAD uart.o
+LOAD rtos_test.o
+LOAD math.o
+LOAD tcpip.o
+LOAD http.o
+LOAD netutil.o
+LOAD filesys.o
+LOAD ethernet.o
+LOAD flash.o
+
+.text           0x10000000     0xe714
+                0x10000000                _ftext=.
+ *(.text)
+ .text          0x10000000      0x200 boot.o
+                0x100001a8                longjmp
+                0x10000000                entry
+                0x10000170                setjmp
+                0x10000134                OS_AsmInterruptInit
+                0x100001e0                OS_AsmMult
+                0x1000003c                interrupt_service_routine
+                0x100001f4                OS_Syscall
+                0x10000128                OS_AsmInterruptEnable
+ .text          0x10000200     0x1ff4 rtos.o
+                0x10000a60                OS_ThreadCpuLock
+                0x10000440                OS_HeapFree
+                0x10001ec8                OS_InterruptMaskSet
+                0x10000e74                OS_ThreadProcessId
+                0x10000ce4                OS_ThreadExit
+                0x10001240                OS_MutexCreate
+                0x10001c80                OS_TimerStop
+                0x10000dd0                OS_ThreadInfoGet
+                0x100005d4                OS_HeapRegister
+                0x10000da8                OS_ThreadTime
+                0x10001b0c                OS_TimerCallback
+                0x10001ea8                OS_InterruptStatus
+                0x10001d6c                OS_InterruptServiceRoutine
+                0x1000216c                OS_Assert
+                0x10000d74                OS_ThreadSelf
+                0x10000d80                OS_ThreadSleep
+                0x10000e00                OS_ThreadPrioritySet
+                0x10001b14                OS_TimerStart
+                0x10001ae0                OS_TimerDelete
+                0x10000b10                OS_ThreadCreate
+                0x10001e6c                OS_InterruptRegister
+                0x100002d8                OS_HeapMalloc
+                0x10001fec                OS_Init
+                0x10000df4                OS_ThreadPriorityGet
+                0x10001020                OS_SemaphorePend
+                0x10002174                main
+                0x100014c8                OS_MQueueCreate
+                0x100005cc                OS_HeapAlternate
+                0x10000fd0                OS_SemaphoreDelete
+                0x10000db4                OS_ThreadInfoSet
+                0x10001f10                OS_InterruptMaskClear
+                0x100012d8                OS_MutexPend
+                0x100013b8                OS_MutexPost
+                0x10000f28                OS_SemaphoreCreate
+                0x10001194                OS_SemaphorePost
+                0x100015c0                OS_MQueueSend
+                0x100012a4                OS_MutexDelete
+                0x10001a0c                OS_TimerCreate
+                0x10000200                OS_HeapCreate
+                0x100016d4                OS_MQueueGet
+                0x10001818                OS_Job
+                0x1000158c                OS_MQueueDelete
+                0x10002144                OS_Start
+                0x100002b4                OS_HeapDestroy
+ .text          0x100021f4      0xb00 libc.o
+                0x100022a8                strncat2
+                0x100027b0                sprintf2
+                0x10002574                abs2
+                0x100021f4                strcpy2
+                0x10002a60                sscanf2
+                0x100026d0                itoa2
+                0x10002314                strcmp2
+                0x1000233c                strncmp2
+                0x10002584                rand2
+                0x10002218                strncpy2
+                0x100025d8                srand2
+                0x10002518                memcmp2
+                0x100026ac                atoi2
+                0x100023f8                strlen2
+                0x1000237c                strstr2
+                0x100025e4                strtol2
+                0x10002550                memset2
+                0x10002424                memcpy2
+                0x100024a0                memmove2
+                0x1000225c                strcat2
+ .text          0x10002cf4      0x8fc uart.o
+                0x10002d80                BufferWrite
+                0x10002cf4                BufferCreate
+                0x100030e0                UartReadData
+                0x100035ac                OS_getch
+                0x10003048                UartRead
+                0x10002fbc                UartInit
+                0x100034f4                UartPacketConfig
+                0x10003018                UartWrite
+                0x10003528                OS_puts
+                0x100034fc                UartPacketSend
+                0x10002e30                BufferRead
+                0x100035d0                OS_kbhit
+                0x10003150                UartPrintf
+                0x1000306c                UartWriteData
+                0x10003504                Led
+                0x10003264                UartPrintfCritical
+                0x1000338c                UartScanf
+ .text          0x100035f0     0x1494 rtos_test.o
+                0x10004814                TestSyscall
+                0x10004858                MainThread
+                0x100044b4                TestMath
+ .text          0x10004a84      0xf80 math.o
+                0x10004d44                __divsf3
+                0x10004ef4                __fixsfsi
+                0x10004c0c                __subsf3
+                0x10005688                FP_Atan2
+                0x10005420                FP_Sin
+                0x10005170                FP_Sqrt
+                0x100050d0                __lesf2
+                0x10005864                FP_Log
+                0x100059cc                FP_Pow
+                0x10005450                FP_Atan
+                0x10005150                __nesf2
+                0x1000528c                FP_Cos
+                0x100050f0                __gtsf2
+                0x10004f54                __floatsisf
+                0x10005130                __eqsf2
+                0x10004a84                __negsf2
+                0x100050b0                __ltsf2
+                0x1000500c                FP_Cmp
+                0x10004c40                __mulsf3
+                0x10005110                __gesf2
+                0x10005728                FP_Exp
+                0x10004aa8                __addsf3
+ .text          0x10005a04     0x2d90 tcpip.o
+                0x10006f14                IPProcessEthernetPacket
+                0x10005a04                IPFrameGet
+                0x100075a8                MyPacketGet
+                0x100075c8                IPInit
+                0x10007a0c                IPWriteFlush
+                0x1000821c                IPTick
+                0x100076fc                IPOpen
+                0x10007d3c                IPRead
+                0x10008660                IPResolve
+                0x10008060                IPClose
+                0x100080ec                IPPrintf
+                0x10007aa4                IPWrite
+                0x10006600                IPAddressSelf
+ .text          0x10008794     0x1324 http.o
+                0x100087e4                atox
+                0x10009a90                HtmlInit
+                0x10008794                xtoa
+                0x100088ac                present_rounds
+                0x100091b8                HttpServer
+                0x10009604                HttpInit
+ .text          0x10009ab8     0x2ae8 netutil.o
+                0x1000c264                DllDummy
+                0x1000c56c                ConsoleInit
+                0x1000a2e0                FtpTransfer
+                0x1000c33c                ConsoleRun
+                0x1000b19c                ConsoleGetch
+                0x1000b134                ConsoleKbhit
+                0x1000b1fc                ConsolePrintf
+                0x1000c490                IPNameValue
+                0x1000b030                ConsoleScanf
+                0x1000a680                TftpTransfer
+                0x10009fdc                FtpdInit
+                0x1000afe8                TelnetInit
+                0x1000a558                TftpdInit
+ .text          0x1000c5a0     0x15c0 filesys.o
+                0x1000d6f0                DirRecursive
+                0x1000d524                OS_fmkdir
+                0x1000cd4c                OS_fseek
+                0x1000c770                MediaBlockInit
+                0x1000d568                OS_fdelete
+                0x1000cbec                OS_fwrite
+                0x1000cad8                OS_fread
+                0x1000d660                OS_flength
+                0x1000d7dc                OS_ftest
+                0x1000d1a0                OS_fopen
+                0x1000d66c                OS_fdir
+                0x1000d444                OS_fclose
+ .text          0x1000db60      0x9f0 ethernet.o
+                0x1000db60                EthernetReceive
+                0x1000de9c                EthernetTransmit
+                0x1000e41c                EthernetInit
+                0x1000e03c                EthernetThread
+                0x1000e104                EthernetIsr
+ .text          0x1000e550      0x1c4 flash.o
+                0x1000e620                FlashWrite
+                0x1000e550                FlashLock
+                0x1000e58c                FlashUnlock
+                0x1000e5b0                FlashRead
+                0x1000e6bc                FlashErase
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+                0x1000e714                _ecode=.
+
+.reginfo        0x1000e714       0x18
+ *(.reginfo)
+ .reginfo       0x1000e714       0x18 boot.o
+ .reginfo       0x1000e72c       0x18 rtos.o
+ .reginfo       0x1000e72c       0x18 libc.o
+ .reginfo       0x1000e72c       0x18 uart.o
+ .reginfo       0x1000e72c       0x18 rtos_test.o
+ .reginfo       0x1000e72c       0x18 math.o
+ .reginfo       0x1000e72c       0x18 tcpip.o
+ .reginfo       0x1000e72c       0x18 http.o
+ .reginfo       0x1000e72c       0x18 netutil.o
+ .reginfo       0x1000e72c       0x18 filesys.o
+ .reginfo       0x1000e72c       0x18 ethernet.o
+ .reginfo       0x1000e72c       0x18 flash.o
+
+.ctors
+ *(.ctors)
+
+.dtors
+ *(.dtors)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.sdeinit
+ *(.sdeinit)
+
+.sdefini
+ *(.sdefini)
+
+.rodata         0x1000e730     0x16f6
+ *(.rodata)
+ .rodata        0x1000e730       0x8d rtos.o
+ *fill*         0x1000e7bd        0x3
+ .rodata        0x1000e7c0       0x1d uart.o
+ *fill*         0x1000e7dd        0x3
+ .rodata        0x1000e7e0      0x52c rtos_test.o
+ .rodata        0x1000ed0c       0x1b math.o
+ *fill*         0x1000ed27        0x1
+ .rodata        0x1000ed28       0xdd tcpip.o
+ *fill*         0x1000ee05        0x3
+ .rodata        0x1000ee08      0x914 http.o
+ *fill*         0x1000f71c        0x4
+ .rodata        0x1000f720      0x5fc netutil.o
+                0x1000faa8                DllFuncList
+ .rodata        0x1000fd1c       0xf5 filesys.o
+ *fill*         0x1000fe11        0x3
+ .rodata        0x1000fe14        0x9 ethernet.o
+ *fill*         0x1000fe1d        0x3
+ .rodata        0x1000fe20        0x6 flash.o
+ *(.rdata)
+ *(.gnu.linkonce.r*)
+
+.rodata1
+ *(.rodata1)
+                0x1000fe26                _etext=.
+                0x1000fe26                PROVIDE (etext, .)
+
+.data           0x1000fe26       0xe1
+                0x1000fe26                _fdata=.
+ *(.data)
+ *fill*         0x1000fe26        0x2
+ .data          0x1000fe28        0x6 rtos_test.o
+                0x1000fe28                macAddress
+ *fill*         0x1000fe2e        0x2
+ .data          0x1000fe30       0x36 tcpip.o
+ *fill*         0x1000fe66        0x2
+ .data          0x1000fe68       0x98 netutil.o
+ .data          0x1000ff00        0x7 ethernet.o
+ *(.gnu.linkonce.d*)
+
+.data1
+ *(.data1)
+                0x10017ef7                _gp=(.+0x7ff0)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata          0x1000ff08       0x18
+ *(.sdata)
+ .sdata         0x1000ff08        0x4 rtos.o
+ .sdata         0x1000ff0c        0x4 libc.o
+ .sdata         0x1000ff10       0x10 tcpip.o
+                0x1000ff10                IPVerbose
+ *(.gnu.linkonce.s*)
+                0x1000ff20                _edata=.
+                0x1000ff20                PROVIDE (edata, .)
+                0x1000ff20                .=ALIGN(0x8)
+                0x1000ff20                __bss_start=.
+                0x1000ff20                _fbss=__bss_start
+
+.sbss           0x1000ff20       0xcc
+ *(.sbss)
+ .sbss          0x1000ff20       0x40 rtos.o
+ .sbss          0x1000ff60        0xc uart.o
+ .sbss          0x1000ff6c       0x3c tcpip.o
+ .sbss          0x1000ffa8        0xc http.o
+ .sbss          0x1000ffb4       0x18 netutil.o
+ .sbss          0x1000ffcc        0x8 filesys.o
+ .sbss          0x1000ffd4       0x10 ethernet.o
+ .sbss          0x1000ffe4        0x4 flash.o
+ *(.scommon)
+ .scommon       0x1000ffe8        0x4 rtos_test.o
+                0x1000ffe8                Global
+
+.bss            0x1000fff0     0x2f60
+ *(.dynbss)
+ *(.bss)
+ .bss           0x1000fff0       0xb8 rtos.o
+ .bss           0x100100a8      0x400 uart.o
+ .bss           0x100104a8       0x64 tcpip.o
+ *fill*         0x1001050c        0x4
+ .bss           0x10010510      0x1f4 netutil.o
+ *fill*         0x10010704        0x4
+ .bss           0x10010708     0x2040 filesys.o
+ .bss           0x10012748      0x600 ethernet.o
+ *(COMMON)
+ *fill*         0x10012d48        0x8
+ COMMON         0x10012d50      0x200 boot.o
+                0x10012d50                InitStack
+                0x10012f50                _end=.
+                0x10012f50                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.mdebug
+ *(.mdebug)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.sdata
+ *(.rel.sdata)
+ *(.rel.gnu.linkonce.s*)
+
+.rela.sdata
+ *(.rela.sdata)
+ *(.rela.gnu.linkonce.s*)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.gnu.linkonce.r*)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+OUTPUT(test.axf elf32-bigmips)

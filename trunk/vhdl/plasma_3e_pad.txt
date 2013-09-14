@@ -1,0 +1,350 @@
+Release 14.1 - par P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Jun 08 22:36:23 2013
+
+
+INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
+1. The <design name>_pad.txt file (this file) designed to provide information on IO usage in a human readable ASCII text format viewable through common text editors.
+2. The <design namd>_pad.csv file for use with spreadsheet programs such as MS Excel. This file can also be read by PACE to communicate post PAR IO information.
+3. The <design name>.pad file designed for parsing by customers.  It uses the "|" as a data field separator.
+
+INPUT FILE:       plasma_3e_map.ncd
+OUTPUT FILE:      plasma_3e_pad.txt
+PART TYPE:        xc3s500e
+SPEED GRADE:      -4
+PACKAGE:          fg320
+
+Pinout by Pin Number:
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Pin Number|Signal Name  |Pin Usage|Pin Name                 |Direction    |IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage|Constraint|IO Register|Signal Integrity|
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|A1        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|A2        |             |         |TDI                      |             |           |              |          |         |           |         |       |          |           |                |
+|A3        |             |IBUF     |IP                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A4        |             |DIFFM    |IO_L24P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A5        |             |DIFFMI   |IP_L22P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A6        |             |DIFFS    |IO_L20N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A7        |             |IBUF     |IP                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A8        |             |IOB      |IO                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A9        |             |         |VCCO_0                   |             |           |0             |          |         |           |         |3.30   |          |           |                |
+|A10       |             |DIFFS    |IO_L12N_0/GCLK7          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A11       |SF_A<24>     |IOB      |IO                       |OUTPUT       |LVCMOS33   |0             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|A12       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|A13       |             |DIFFM    |IO_L05P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A14       |             |DIFFS    |IO_L04N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A15       |             |DIFFSI   |IP_L02N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A16       |             |DIFFS    |IO_L01N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|A17       |             |         |TCK                      |             |           |              |          |         |           |         |       |          |           |                |
+|A18       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|B1        |             |         |PROG_B                   |             |           |              |          |         |           |         |       |          |           |                |
+|B2        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|B3        |             |DIFFS    |IO_L25N_0/HSWAP          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B4        |             |DIFFS    |IO_L24N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B5        |             |DIFFSI   |IP_L22N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B6        |             |DIFFM    |IO_L20P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B7        |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|B8        |             |DIFFMI   |IP_L13P_0/GCLK8          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B9        |             |DIFFSI   |IP_L13N_0/GCLK9          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B10       |             |DIFFM    |IO_L12P_0/GCLK6          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B11       |             |IOB      |IO/VREF_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B12       |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|B13       |             |DIFFS    |IO_L05N_0/VREF_0         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B14       |             |DIFFM    |IO_L04P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B15       |             |DIFFMI   |IP_L02P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B16       |             |DIFFM    |IO_L01P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|B17       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|B18       |SF_STS       |IBUF     |IP                       |INPUT        |LVCMOS33   |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|C1        |SD_RAS       |IOB      |IO_L01P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|C2        |SD_CAS       |IOB      |IO_L01N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|C3        |             |DIFFM    |IO_L25P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C4        |             |IOB      |IO                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C5        |             |DIFFM    |IO_L23P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C6        |             |         |VCCO_0                   |             |           |0             |          |         |           |         |3.30   |          |           |                |
+|C7        |             |DIFFM    |IO_L18P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C8        |             |DIFFMI   |IP_L16P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C9        |CLK_50MHZ    |IBUF     |IO_L14P_0/GCLK10         |INPUT        |LVCMOS33   |0             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|C10       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|C11       |LED<4>       |IOB      |IO_L09P_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|C12       |             |DIFFMI   |IP_L07P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C13       |             |         |VCCO_0                   |             |           |0             |          |         |           |         |3.30   |          |           |                |
+|C14       |             |DIFFS    |IO_L03N_0/VREF_0         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C15       |             |IBUF     |IP                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|C16       |             |         |TDO                      |             |           |              |          |         |           |         |       |          |           |                |
+|C17       |SF_BYTE      |IOB      |IO_L24N_1/LDC2           |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|C18       |SF_OE        |IOB      |IO_L24P_1/LDC1           |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|D1        |SD_WE        |IOB      |IO_L02P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|D2        |             |DIFFS    |IO_L02N_3/VREF_3         |VREF Required|           |3             |          |         |           |         |1.25   |PROHIBITED|           |                |
+|D3        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|D4        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|D5        |             |DIFFS    |IO_L23N_0/VREF_0         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D6        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|D7        |             |DIFFS    |IO_L18N_0/VREF_0         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D8        |             |DIFFSI   |IP_L16N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D9        |             |DIFFS    |IO_L14N_0/GCLK11         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D10       |             |DIFFM    |IO_L11P_0/GCLK4          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D11       |LED<5>       |IOB      |IO_L09N_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|D12       |             |DIFFSI   |IP_L07N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D13       |             |IBUF     |IP                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D14       |             |DIFFM    |IO_L03P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|D15       |             |         |TMS                      |             |           |              |          |         |           |         |       |          |           |                |
+|D16       |SF_CE0       |IOB      |IO_L23N_1/LDC0           |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|D17       |SF_WE        |IOB      |IO_L23P_1/HDC            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|D18       |BTN_WEST     |IBUF     |IP/VREF_1                |INPUT        |LVTTL      |1             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
+|E1        |SD_DQ<9>     |IOB      |IO_L03N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|E2        |SD_DQ<8>     |IOB      |IO_L03P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|E3        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|E4        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|E5        |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|E6        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|E7        |             |DIFFS    |IO_L19N_0/VREF_0         |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|E8        |             |DIFFM    |IO_L17P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|E9        |LED<6>       |IOB      |IO_L15P_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|E10       |             |DIFFS    |IO_L11N_0/GCLK5          |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|E11       |LED<2>       |IOB      |IO_L08P_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|E12       |LED<1>       |IOB      |IO_L06N_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|E13       |             |IOB      |IO                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|E14       |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|E15       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|E16       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|E17       |             |IOB      |IO                       |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|E18       |             |IBUF     |IP                       |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|F1        |SD_DQ<10>    |IOB      |IO_L05P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|F2        |SD_DQ<11>    |IOB      |IO_L05N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|F3        |             |         |VCCO_3                   |             |           |3             |          |         |           |         |2.50   |          |           |                |
+|F4        |SD_A<4>      |IOB      |IO                       |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F5        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|F6        |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|F7        |             |DIFFM    |IO_L19P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|F8        |             |DIFFS    |IO_L17N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|F9        |LED<7>       |IOB      |IO_L15N_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F10       |             |DIFFMI   |IP_L10P_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|F11       |LED<3>       |IOB      |IO_L08N_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F12       |LED<0>       |IOB      |IO_L06P_0                |OUTPUT       |LVTTL      |0             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F13       |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|F14       |VGA_VSYNC    |IOB      |IO_L21N_1                |OUTPUT       |LVTTL      |1             |8         |FAST     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F15       |VGA_HSYNC    |IOB      |IO_L21P_1                |OUTPUT       |LVTTL      |1             |8         |FAST     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|F16       |             |         |VCCO_1                   |             |           |1             |          |         |           |         |3.30   |          |           |                |
+|F17       |             |DIFFS    |IO_L19N_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|F18       |             |DIFFM    |IO_L19P_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|G1        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|G2        |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|G3        |SD_UDQS      |IOB      |IO_L06P_3                |TRISTATE     |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|G4        |             |DIFFS    |IO_L06N_3/VREF_3         |VREF Required|           |3             |          |         |           |         |1.25   |PROHIBITED|           |                |
+|G5        |SD_DQ<13>    |IOB      |IO_L07N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|G6        |SD_DQ<12>    |IOB      |IO_L07P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|G7        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|G8        |             |         |VCCO_0                   |             |           |0             |          |         |           |         |3.30   |          |           |                |
+|G9        |             |IOB      |IO                       |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|G10       |             |DIFFSI   |IP_L10N_0                |UNUSED       |           |0             |          |         |           |         |       |          |           |                |
+|G11       |             |         |VCCO_0                   |             |           |0             |          |         |           |         |3.30   |          |           |                |
+|G12       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|G13       |PS2_DATA     |IBUF     |IO_L20N_1                |INPUT        |LVCMOS33   |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|G14       |PS2_CLK      |IBUF     |IO_L20P_1                |INPUT        |LVCMOS33   |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|G15       |VGA_BLUE     |IOB      |IO_L18P_1                |OUTPUT       |LVTTL      |1             |8         |FAST     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|G16       |             |DIFFS    |IO_L18N_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|G17       |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|G18       |ROT_B        |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|H1        |SD_A<7>      |IOB      |IO_L10N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H2        |SD_A<8>      |IOB      |IO_L10P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H3        |SD_A<6>      |IOB      |IO_L09N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H4        |SD_A<5>      |IOB      |IO_L09P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H5        |SD_DQ<15>    |IOB      |IO_L08N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|H6        |SD_DQ<14>    |IOB      |IO_L08P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|H7        |             |         |VCCO_3                   |             |           |3             |          |         |           |         |2.50   |          |           |                |
+|H8        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|H9        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|H10       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|H11       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|H12       |             |         |VCCO_1                   |             |           |1             |          |         |           |         |3.30   |          |           |                |
+|H13       |BTN_EAST     |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
+|H14       |VGA_RED      |IOB      |IO_L17P_1                |OUTPUT       |LVTTL      |1             |8         |FAST     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H15       |VGA_GREEN    |IOB      |IO_L17N_1                |OUTPUT       |LVTTL      |1             |8         |FAST     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H16       |             |DIFFM    |IO_L16P_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|H17       |SF_A<0>      |IOB      |IO_L16N_1/A0             |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|H18       |SW<2>        |IBUF     |IP/VREF_1                |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|J1        |SD_UDM       |IOB      |IO_L12P_3/LHCLK2         |TRISTATE     |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J2        |SD_LDM       |IOB      |IO_L12N_3/LHCLK3/IRDY2   |TRISTATE     |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J3        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|J4        |SD_CK_N      |IOB      |IO_L11N_3/LHCLK1         |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J5        |SD_CK_P      |IOB      |IO_L11P_3/LHCLK0         |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J6        |             |IBUF     |IP/VREF_3                |VREF Required|           |3             |          |         |           |         |1.25   |PROHIBITED|           |                |
+|J7        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|J8        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|J11       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|J12       |SF_A<2>      |IOB      |IO_L15P_1/A2             |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J13       |SF_A<1>      |IOB      |IO_L15N_1/A1             |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J14       |SF_A<3>      |IOB      |IO_L14N_1/A3/RHCLK7      |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J15       |SF_A<4>      |IOB      |IO_L14P_1/A4/RHCLK6      |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J16       |SF_A<5>      |IOB      |IO_L13N_1/A5/RHCLK5      |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J17       |SF_A<6>      |IOB      |IO_L13P_1/A6/RHCLK4/IRDY1|OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|J18       |             |         |VCCO_1                   |             |           |1             |          |         |           |         |3.30   |          |           |                |
+|K1        |             |         |VCCO_3                   |             |           |3             |          |         |           |         |2.50   |          |           |                |
+|K2        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|K3        |SD_CKE       |IOB      |IO_L13P_3/LHCLK4/TRDY2   |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K4        |SD_CS        |IOB      |IO_L13N_3/LHCLK5         |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K5        |SD_BA<0>     |IOB      |IO_L14N_3/LHCLK7         |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K6        |SD_BA<1>     |IOB      |IO_L14P_3/LHCLK6         |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K7        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|K8        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|K11       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|K12       |SF_A<9>      |IOB      |IO_L11N_1/A9/RHCLK1      |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K13       |SF_A<10>     |IOB      |IO_L11P_1/A10/RHCLK0     |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K14       |SF_A<7>      |IOB      |IO_L12N_1/A7/RHCLK3/TRDY1|OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K15       |SF_A<8>      |IOB      |IO_L12P_1/A8/RHCLK2      |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|K16       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|K17       |BTN_SOUTH    |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
+|K18       |ROT_A        |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|L1        |SD_DQ<1>     |IOB      |IO_L15P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|L2        |SD_DQ<0>     |IOB      |IO_L15N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|L3        |SD_DQ<2>     |IOB      |IO_L16P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|L4        |SD_DQ<3>     |IOB      |IO_L16N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|L5        |             |DIFFS    |IO_L17N_3/VREF_3         |VREF Required|           |3             |          |         |           |         |1.25   |PROHIBITED|           |                |
+|L6        |SD_LDQS      |IOB      |IO_L17P_3                |TRISTATE     |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|L7        |             |         |VCCO_3                   |             |           |3             |          |         |           |         |2.50   |          |           |                |
+|L8        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|L9        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|L10       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|L11       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|L12       |             |         |VCCO_1                   |             |           |1             |          |         |           |         |3.30   |          |           |                |
+|L13       |SW<0>        |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|L14       |SW<1>        |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|L15       |SF_A<11>     |IOB      |IO_L09N_1/A11            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|L16       |SF_A<12>     |IOB      |IO_L09P_1/A12            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|L17       |             |DIFFS    |IO_L10N_1/VREF_1         |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|L18       |             |DIFFM    |IO_L10P_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|M1        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|M2        |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|M3        |SD_DQ<4>     |IOB      |IO_L18N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M4        |SD_DQ<5>     |IOB      |IO_L18P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M5        |SD_DQ<6>     |IOB      |IO_L19P_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M6        |SD_DQ<7>     |IOB      |IO_L19N_3                |BIDIR        |SSTL2_I    |3             |          |         |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M7        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|M8        |             |         |VCCO_2                   |             |           |2             |          |         |           |         |3.30   |          |           |                |
+|M9        |SF_D<6>      |IOB      |IO_L12N_2/D6/GCLK13      |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M10       |             |DIFFM    |IO_L16P_2/M0             |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|M11       |             |         |VCCO_2                   |             |           |2             |          |         |           |         |3.30   |          |           |                |
+|M12       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|M13       |             |DIFFS    |IO_L05N_1/VREF_1         |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|M14       |RS232_DCE_TXD|IOB      |IO_L05P_1                |OUTPUT       |LVTTL      |1             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|M15       |SF_D<11>     |IOB      |IO_L07P_1                |BIDIR        |LVCMOS33   |1             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M16       |SF_D<12>     |IOB      |IO_L07N_1                |BIDIR        |LVCMOS33   |1             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|M17       |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|M18       |             |DIFFS    |IO_L08N_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|N1        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|N2        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|N3        |             |         |VCCO_3                   |             |           |3             |          |         |           |         |2.50   |          |           |                |
+|N4        |SD_A<9>      |IOB      |IO_L20P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|N5        |SD_A<11>     |IOB      |IO_L20N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|N6        |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|N7        |             |DIFFM    |IO_L07P_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|N8        |             |DIFFS    |IO_L09N_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|N9        |SF_D<7>      |IOB      |IO_L12P_2/D7/GCLK12      |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|N10       |SPI_MISO     |IOB      |IO_L16N_2/DIN/D0         |BIDIR        |LVCMOS33   |2             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|N11       |SF_A<23>     |IOB      |IO_L18N_2                |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|N12       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|N13       |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|N14       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|N15       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|N16       |             |         |VCCO_1                   |             |           |1             |          |         |           |         |3.30   |          |           |                |
+|N17       |SW<3>        |IBUF     |IP                       |INPUT        |LVTTL      |1             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
+|N18       |             |DIFFM    |IO_L08P_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|P1        |SD_A<3>      |IOB      |IO_L21N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|P2        |SD_A<12>     |IOB      |IO_L21P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|P3        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|P4        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|P5        |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|P6        |SF_D<13>     |IOB      |IO_L05N_2                |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|P7        |             |DIFFS    |IO_L07N_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|P8        |             |DIFFM    |IO_L09P_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|P9        |E_MDC        |IOB      |IO                       |OUTPUT       |LVCMOS33   |2             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|P10       |SF_D<1>      |IOB      |IO_L15N_2/D1/GCLK3       |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|P11       |             |DIFFM    |IO_L18P_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|P12       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|P13       |             |DIFFM    |IO_L22P_2/A23            |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|P14       |             |         |VCCINT                   |             |           |              |          |         |           |         |1.2    |          |           |                |
+|P15       |E_TX_EN      |IOB      |IO                       |OUTPUT       |LVCMOS33   |1             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|P16       |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|P17       |SF_D<10>     |IOB      |IO_L06P_1                |BIDIR        |LVCMOS33   |1             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|P18       |             |DIFFS    |IO_L06N_1                |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|R1        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|R2        |SD_A<2>      |IOB      |IO_L23N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|R3        |SD_A<1>      |IOB      |IO_L23P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|R4        |             |IOB      |IO/VREF_3                |VREF Required|           |3             |          |         |           |         |1.25   |PROHIBITED|           |                |
+|R5        |E_TXD<2>     |IOB      |IO_L04P_2                |OUTPUT       |LVCMOS33   |2             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|R6        |             |DIFFM    |IO_L05P_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|R7        |RS232_DCE_RXD|IBUF     |IP_L08N_2                |INPUT        |LVTTL      |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|R8        |SF_D<14>     |IOB      |IO_L10P_2                |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|R9        |SF_D<5>      |IOB      |IO/D5                    |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|R10       |SF_D<2>      |IOB      |IO_L15P_2/D2/GCLK2       |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|R11       |E_TXD<0>     |IOB      |IO                       |OUTPUT       |LVCMOS33   |2             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|R12       |             |DIFFS    |IO_L20N_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|R13       |             |DIFFS    |IO_L22N_2/A22            |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|R14       |             |DIFFS    |IO_L24N_2/A20            |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|R15       |SF_D<8>      |IOB      |IO_L03P_1                |BIDIR        |LVCMOS33   |1             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|R16       |SF_D<9>      |IOB      |IO_L03N_1/VREF_1         |BIDIR        |LVCMOS33   |1             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|R17       |             |IBUF     |IP                       |UNUSED       |           |1             |          |         |           |         |       |          |           |                |
+|R18       |SF_A<14>     |IOB      |IO_L02P_1/A14            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T1        |SD_A<0>      |IOB      |IO_L24N_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T2        |SD_A<10>     |IOB      |IO_L24P_3                |OUTPUT       |SSTL2_I    |3             |          |         |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T3        |             |DIFFS    |IO_L01N_2/INIT_B         |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|T4        |             |DIFFS    |IO_L03N_2/MOSI/CSI_B     |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|T5        |E_TXD<3>     |IOB      |IO_L04N_2                |OUTPUT       |LVCMOS33   |2             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T6        |             |         |VCCO_2                   |             |           |2             |          |         |           |         |3.30   |          |           |                |
+|T7        |E_TX_CLK     |IBUF     |IP_L08P_2                |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|T8        |SF_D<15>     |IOB      |IO_L10N_2                |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|T9        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|T10       |             |DIFFSI   |IP_L14N_2/M2/GCLK1       |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|T11       |E_RXD<1>     |IBUF     |IP_L17P_2                |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|T12       |SF_A<20>     |IOB      |IO_L20P_2                |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T13       |             |         |VCCO_2                   |             |           |2             |          |         |           |         |3.30   |          |           |                |
+|T14       |             |DIFFM    |IO_L24P_2/A21            |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|T15       |E_TXD<1>     |IOB      |IO/VREF_2                |OUTPUT       |LVCMOS33   |2             |8         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T16       |SF_A<17>     |IOB      |IO_L26P_2/VS0/A17        |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T17       |SF_A<15>     |IOB      |IO_L01N_1/A15            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|T18       |SF_A<13>     |IOB      |IO_L02N_1/A13            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|U1        |             |IBUF     |IP                       |UNUSED       |           |3             |          |         |           |         |       |          |           |                |
+|U2        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|U3        |             |DIFFM    |IO_L01P_2/CSO_B          |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U4        |             |DIFFM    |IO_L03P_2/DOUT/BUSY      |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U5        |E_MDIO       |IOB      |IO/VREF_2                |BIDIR        |LVCMOS33   |2             |8         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|U6        |             |IBUF     |IP                       |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U7        |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|U8        |             |DIFFMI   |IP_L11P_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U9        |SF_D<4>      |IOB      |IO_L13P_2/D4/GCLK14      |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|U10       |             |DIFFMI   |IP_L14P_2/RDWR_B/GCLK0   |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U11       |E_RXD<2>     |IBUF     |IP_L17N_2                |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|U12       |             |         |VCCAUX                   |             |           |              |          |         |           |         |2.5    |          |           |                |
+|U13       |             |IBUF     |IP                       |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U14       |             |DIFFSI   |IP_L23N_2                |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U15       |SF_A<18>     |IOB      |IO_L25N_2/VS1/A18        |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|U16       |             |DIFFS    |IO_L26N_2/CCLK           |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|U17       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|U18       |SF_A<16>     |IOB      |IO_L01P_1/A16            |OUTPUT       |LVCMOS33   |1             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|V1        |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
+|V2        |E_RX_DV      |IBUF     |IP                       |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|V3        |E_RX_CLK     |IBUF     |IP_L02N_2                |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|V4        |BTN_NORTH    |IBUF     |IP_L02P_2                |INPUT        |LVTTL      |2             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
+|V5        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|V6        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|V7        |             |         |NC                       |             |           |              |          |         |           |         |       |          |           |                |
+|V8        |E_RXD<0>     |IBUF     |IP_L11N_2/VREF_2         |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|V9        |SF_D<3>      |IOB      |IO_L13N_2/D3/GCLK15      |BIDIR        |LVCMOS33   |2             |4         |SLOW     |NONE**     |NONE     |       |LOCATED   |NO         |NONE            |
+|V10       |             |         |VCCO_2                   |             |           |2             |          |         |           |         |3.30   |          |           |                |
+|V11       |             |IOB      |IO/M1                    |UNUSED       |           |2             |          |         |           |         |       |          |           |                |
+|V12       |SF_A<22>     |IOB      |IO_L19P_2                |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|V13       |SF_A<21>     |IOB      |IO_L19N_2/VREF_2         |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|V14       |E_RXD<3>     |IBUF     |IP_L23P_2                |INPUT        |LVCMOS33   |2             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
+|V15       |SF_A<19>     |IOB      |IO_L25P_2/VS2/A19        |OUTPUT       |LVCMOS33   |2             |4         |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
+|V16       |ROT_CENTER   |IBUF     |IP                       |INPUT        |LVTTL      |2             |          |         |PULLDOWN   |NONE     |       |LOCATED   |NO         |NONE            |
+|V17       |             |         |DONE                     |             |           |              |          |         |           |         |       |          |           |                |
+|V18       |             |         |GND                      |             |           |              |          |         |           |         |       |          |           |                |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Default value.
+** This default Pullup/Pulldown value can be overridden in Bitgen. 
+****** Special VCCO requirements may apply. Please consult the device 
+       family datasheet for specific guideline on VCCO requirements. 
+
+

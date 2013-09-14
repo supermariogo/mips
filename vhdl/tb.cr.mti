@@ -1,0 +1,161 @@
+G:/mips/vhdl/mem_ctrl.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/mem_ctrl.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity mem_ctrl
+-- Compiling architecture logic of mem_ctrl
+
+} {} {}} G:/mips/vhdl/plasma.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/plasma.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity plasma
+-- Compiling architecture logic of plasma
+
+} {} {}} G:/mips/vhdl/ram.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/ram.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package attributes
+-- Loading package std_logic_misc
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package mlite_pack
+-- Compiling entity ram
+-- Compiling architecture logic of ram
+
+} {} {}} G:/mips/vhdl/reg_bank.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/reg_bank.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package mlite_pack
+-- Compiling entity reg_bank
+-- Compiling architecture ram_block of reg_bank
+
+} {} {}} G:/mips/vhdl/pc_next.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/pc_next.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity pc_next
+-- Compiling architecture logic of pc_next
+
+} {} {}} G:/mips/vhdl/mlite_cpu.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/mlite_cpu.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity mlite_cpu
+-- Compiling architecture logic of mlite_cpu
+
+} {} {}} G:/mips/vhdl/bus_mux.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/bus_mux.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity bus_mux
+-- Compiling architecture logic of bus_mux
+
+} {} {}} G:/mips/vhdl/tbench.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/tbench.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity tbench
+-- Compiling architecture logic of tbench
+
+} {} {}} G:/mips/vhdl/uart.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/uart.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package attributes
+-- Loading package std_logic_misc
+-- Loading package std_logic_arith
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package std_logic_unsigned
+-- Loading package mlite_pack
+-- Compiling entity uart
+-- Compiling architecture logic of uart
+
+} {} {}} G:/mips/vhdl/shifter.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/shifter.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity shifter
+-- Compiling architecture logic of shifter
+
+} {} {}} G:/mips/vhdl/ddr_ctrl.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/ddr_ctrl.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package mlite_pack
+-- Compiling entity ddr_ctrl
+-- Compiling architecture logic of ddr_ctrl
+
+} {} {}} G:/mips/vhdl/pipeline.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/pipeline.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity pipeline
+-- Compiling architecture logic of pipeline
+
+} {} {}} G:/mips/vhdl/control.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/control.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity control
+-- Compiling architecture logic of control
+
+} {} {}} G:/mips/vhdl/mlite_pack.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/mlite_pack.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package mlite_pack
+-- Compiling package body mlite_pack
+-- Loading package mlite_pack
+
+} {} {}} G:/mips/vhdl/alu.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/alu.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mlite_pack
+-- Compiling entity alu
+-- Compiling architecture logic of alu
+
+} {} {}} G:/mips/vhdl/eth_dma.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/eth_dma.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package mlite_pack
+-- Compiling entity eth_dma
+-- Compiling architecture logic of eth_dma
+
+} {} {}} G:/mips/vhdl/mult.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/vhdl/mult.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package mlite_pack
+-- Compiling entity mult
+-- Compiling architecture logic of mult
+
+} {} {}}

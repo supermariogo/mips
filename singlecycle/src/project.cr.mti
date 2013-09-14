@@ -1,0 +1,161 @@
+G:/mips/singlecycle/src/sl2.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/sl2.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity sl2
+-- Compiling architecture behave of sl2
+
+} {} {}} G:/mips/singlecycle/src/maindec.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/maindec.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity maindec
+-- Compiling architecture behave of maindec
+
+} {} {}} G:/mips/singlecycle/src/mips.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/mips.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mips
+-- Compiling architecture struct of mips
+
+} {} {}} G:/mips/singlecycle/src/alu.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/alu.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity alu
+-- Compiling architecture behave of alu
+
+} {} {}} G:/mips/singlecycle/src/flopr.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/flopr.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity flopr
+-- Compiling architecture asynchronous of flopr
+
+} {} {}} G:/mips/singlecycle/src/controller.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/controller.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity controller
+-- Compiling architecture struct of controller
+
+} {} {}} G:/mips/singlecycle/src/mux2.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/mux2.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+-- Compiling architecture behave of mux2
+
+} {} {}} G:/mips/singlecycle/src/tb_mips.vhd {2 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/tb_mips.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package pkg
+-- Compiling entity tb_mips
+-- Compiling architecture test of tb_mips
+** Warning: G:/mips/singlecycle/src/tb_mips.vhd(21): (vcom-1236) Shared variables must be of a protected type.
+
+} {} {}} G:/mips/singlecycle/src/regfile.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/regfile.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity regfile
+-- Compiling architecture behave of regfile
+
+} {} {}} G:/mips/singlecycle/src/aludec.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/aludec.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity aludec
+-- Compiling architecture behave of aludec
+
+} {} {}} G:/mips/singlecycle/src/datapath.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/datapath.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity datapath
+-- Compiling architecture struct of datapath
+
+} {} {}} G:/mips/singlecycle/src/novas.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/novas.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Compiling package pkg
+-- Compiling package body pkg
+-- Loading package pkg
+-- Compiling entity novas
+-- Compiling architecture novas_arch of novas
+
+} {} {}} G:/mips/singlecycle/src/testbench.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/testbench.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} G:/mips/singlecycle/src/adder.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/adder.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity adder
+-- Compiling architecture behave of adder
+
+} {} {}} G:/mips/singlecycle/src/imem.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/imem.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package textio
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity imem
+-- Compiling architecture behave of imem
+
+} {} {}} G:/mips/singlecycle/src/tb_controller.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/tb_controller.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package pkg
+-- Compiling entity tb_controller
+-- Compiling architecture test of tb_controller
+
+} {} {}} G:/mips/singlecycle/src/signext.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/signext.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity signext
+-- Compiling architecture behave of signext
+
+} {} {}} G:/mips/singlecycle/src/top.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/top.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity top
+-- Compiling architecture test of top
+
+} {} {}} G:/mips/singlecycle/src/dmem.vhd {1 {vcom -work work -2002 -explicit -novopt G:/mips/singlecycle/src/dmem.vhd
+Model Technology ModelSim SE vcom 6.1f Compiler 2006.05 May 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package textio
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity dmem
+-- Compiling architecture behave of dmem
+
+} {} {}}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="plasma_S3E.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="plasma_3e.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="plasma_3e.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="plasma_3e.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="plasma_3e.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="plasma_3e.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="plasma_3e.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="plasma_3e.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="plasma_3e.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="plasma_3e.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="plasma_3e.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="plasma_3e.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="plasma_3e.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="plasma_3e.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="plasma_3e.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="plasma_3e.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="plasma_3e.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="plasma_3e.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="plasma_3e.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="plasma_3e.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="plasma_3e.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="plasma_3e.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="plasma_3e.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="plasma_3e.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="plasma_3e_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="plasma_3e_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="plasma_3e_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="plasma_3e_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="plasma_3e_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="plasma_3e_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plasma_3e_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plasma_3e_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="plasma_3e_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="plasma_3e_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plasma_3e_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="plasma_3e_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="plasma_3e_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="plasma_3e_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="plasma_3e_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="plasma_3e_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1370693597">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="152302117712623573" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8108244700919511291" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7203976861666239827" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693598" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3893780479581337157" xil_pn:start_ts="1370693598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702075" xil_pn:in_ck="261603198350416713" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1826565112079430386" xil_pn:start_ts="1370701959">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.lso"/>
+      <outfile xil_pn:name="plasma_3e.ngc"/>
+      <outfile xil_pn:name="plasma_3e.ngr"/>
+      <outfile xil_pn:name="plasma_3e.prj"/>
+      <outfile xil_pn:name="plasma_3e.stx"/>
+      <outfile xil_pn:name="plasma_3e.syr"/>
+      <outfile xil_pn:name="plasma_3e.xst"/>
+      <outfile xil_pn:name="plasma_3e_vhdl.prj"/>
+      <outfile xil_pn:name="plasma_3e_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1370693702" xil_pn:in_ck="-5292153169314291299" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3835092413084292226" xil_pn:start_ts="1370693702">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702084" xil_pn:in_ck="-1564552795738262888" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3307427170757599582" xil_pn:start_ts="1370702075">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.bld"/>
+      <outfile xil_pn:name="plasma_3e.ngd"/>
+      <outfile xil_pn:name="plasma_3e_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702097" xil_pn:in_ck="-1864431023418414023" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1370702084">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.pcf"/>
+      <outfile xil_pn:name="plasma_3e_map.map"/>
+      <outfile xil_pn:name="plasma_3e_map.mrp"/>
+      <outfile xil_pn:name="plasma_3e_map.ncd"/>
+      <outfile xil_pn:name="plasma_3e_map.ngm"/>
+      <outfile xil_pn:name="plasma_3e_map.xrpt"/>
+      <outfile xil_pn:name="plasma_3e_summary.xml"/>
+      <outfile xil_pn:name="plasma_3e_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702203" xil_pn:in_ck="-3819907245544822286" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1370702097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.ncd"/>
+      <outfile xil_pn:name="plasma_3e.pad"/>
+      <outfile xil_pn:name="plasma_3e.par"/>
+      <outfile xil_pn:name="plasma_3e.ptwx"/>
+      <outfile xil_pn:name="plasma_3e.unroutes"/>
+      <outfile xil_pn:name="plasma_3e.xpi"/>
+      <outfile xil_pn:name="plasma_3e_pad.csv"/>
+      <outfile xil_pn:name="plasma_3e_pad.txt"/>
+      <outfile xil_pn:name="plasma_3e_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702364" xil_pn:in_ck="7948790480733445272" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1370702327">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.bgn"/>
+      <outfile xil_pn:name="plasma_3e.bit"/>
+      <outfile xil_pn:name="plasma_3e.drc"/>
+      <outfile xil_pn:name="plasma_3e.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1370703797" xil_pn:in_ck="7948790480733432418" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1370703796">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1370702203" xil_pn:in_ck="826006882942432565" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1370702186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="plasma_3e.twr"/>
+      <outfile xil_pn:name="plasma_3e.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

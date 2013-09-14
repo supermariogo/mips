@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[31].reg_bit2b/SPO</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">127</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[31].reg_bit2a/SPO,
+u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[31].reg_bit1b/SPO,
+u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[31].reg_bit1a/SPO,
+u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[30].reg_bit2b/SPO,
+u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[30].reg_bit2a/SPO</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">CLK_50MHZ</arg> are pushed forward through input buffer.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">u1_plama_u1_cpu_u2_mem_ctrl_byte_we_next&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">u1_plama_opt_cache2.u_cache_cache_tag_in_or000011</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">u1_plama_u1_cpu_u5_bus_mux_reg_dest_out&lt;16&gt;11</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">u1_plama_u1_cpu_u2_mem_ctrl_data_read_var_0_mux00006_SW3</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">u1_plama_enable_eth_and0000</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">u1_plama_dma_gen2.u4_eth_send_level_not0001_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+</messages>
+

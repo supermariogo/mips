@@ -1,0 +1,26 @@
+gcc 只是包装，不解释
+
+预编译 
+gcc -E hello.c -o hello.i
+cpp hello.c > hello.i
+
+编译
+gcc -S hello.i -o hello.s
+gcc -S hello.c -o hello.s
+cc1 hello.c
+
+汇编  输出目标文件  .o object file   二进制文件
+as hello.s -o hello.o
+gcc -c hello.s -o hello.o
+gcc -c hello.c -o hello.o
+
+链接
+ld
+
+头文件  .各种信息
+代码段  .code .text   程序指令
+数据段  .data   已初始化的全局变量和局部静态变量 
+Block Started by Symbol .bss 未初始化的全局变量和局部静态变量(头文件要所有未初始化全局变量和局部变量的大小总和)   只是为未初始化的。。。预留位置
+objdump -h boot.o 可以看到     -x 更多信息
+objdump -s -d boot.o
+

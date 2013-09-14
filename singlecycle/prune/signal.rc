@@ -1,0 +1,116 @@
+Magic 271485
+Revision 5.4v9
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort -4 -4 1288 778 209 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "E:\Research\Doctor\Program\DES_RTL\dump.vcd" "E:\Research\Doctor\Program\DES_RTL\dump.vcd.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 3
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 2750.218642 3875.861228
+cursor 3300.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name
+; visible top row signal index
+top 5
+; marker line index
+markerPos 11
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "E:\Research\Doctor\Program\DES_RTL\dump.vcd.fsdb"
+addSignal -h 15 /des_tb/dut_clk
+addSignal -h 15 -holdScope dut_decrypt
+addSignal -h 15 -UNSIGNED -HEX -holdScope dut_desIn[1:64]
+addSignal -h 15 -UNSIGNED -HEX -holdScope dut_desOut[1:64]
+addSignal -h 15 -UNSIGNED -HEX -holdScope dut_key[1:64]
+addSignal -h 15 -holdScope dut_ready
+addSignal -h 15 -holdScope dut_rst_n
+addSignal -h 15 -holdScope dut_start
+addGroup "G2"
+addSignal -h 15 /des_tb/dut/clk
+addSignal -h 15 -holdScope decrypt
+addSignal -h 15 -UNSIGNED -HEX -holdScope roundKey[1:48]
+addSignal -h 15 -UNSIGNED -HEX -holdScope roundSel[3:0]
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope start
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -HEX /des_tb/dut/ks/KeyC0D0[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC1D1[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC2D2[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC3D3[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC4D4[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC5D5[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC6D6[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC7D7[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC8D8[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC9D9[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC10D10[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC11D11[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC12D12[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC13D13[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC14D14[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC15D15[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope KeyC16D16[1:56]
+addSignal -h 15 -UNSIGNED -HEX -holdScope activeKey[1:56]
+addSignal -h 15 -holdScope decrypt
+addSignal -h 15 -UNSIGNED -HEX -holdScope key[1:64]
+addSignal -h 15 -UNSIGNED -HEX -holdScope roundKey[1:48]
+addSignal -h 15 -UNSIGNED -HEX -holdScope roundSel[3:0]
+addGroup "G4"
+addGroup "G5"
+
+; grid status
+; gridSignal signal_name
+; gridEdge 0 | 1
+; gridCount
+; gridCycleTime from to cycleTime
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "E:\Research\Doctor\Program\DES_RTL\dump.vcd.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/des_tb"
+"/des_tb/dut"
+"/des_tb/dut/ks"
+
+SCOPE_LIST_BEGIN
+"/des_tb"
+"/des_tb/dut/ks"
+"/des_tb/dut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

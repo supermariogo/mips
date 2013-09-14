@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2555" delta="old" >&apos;<arg fmt="%s" index="1">-hierarchy_separator</arg>&apos; switch is being deprecated in a future release.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">199</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/reg_bank.vhd</arg>&quot; line <arg fmt="%d" index="2">216</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RAM16X1D</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/bus_mux.vhd</arg>&quot; line <arg fmt="%d" index="2">82</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">G:/mips/code/trunk/vhdl/cache.vhd</arg>&quot; line <arg fmt="%d" index="2">88</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_address&lt;31:12&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address_next&lt;31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">block_enable&lt;7:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">block_do&lt;7:1&gt;</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">no_connect</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">cpu_address&lt;1:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">gpio0_out&lt;31:29&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">gpio0_out&lt;15:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">address&lt;27:26&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">address_reg_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u2_mem_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">address_reg_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u2_mem_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u1_plama_u1_cpu_u2_mem_ctrl_address_reg_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">plasma_3e</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u1_plama_u1_cpu_u2_mem_ctrl_address_reg_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">plasma_3e</arg>&gt;.
+</msg>
+
+</messages>
+

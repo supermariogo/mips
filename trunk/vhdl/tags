@@ -1,0 +1,164 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+$(NAME).prj	build_dir/Makefile	/^$(NAME).prj: $(PROJ_VHDL) $(TARGET_VHDL)$/;"	t
+$(WORK_DIR)/alu/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/alu\/$(DEP_FILE): mlite_pack.vhd alu.vhd$/;"	t
+$(WORK_DIR)/bus_mux/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/bus_mux\/$(DEP_FILE): mlite_pack.vhd bus_mux.vhd$/;"	t
+$(WORK_DIR)/control/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/control\/$(DEP_FILE): mlite_pack.vhd control.vhd$/;"	t
+$(WORK_DIR)/lpm_model/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/lpm_model\/$(DEP_FILE): lpm_model.vhd$/;"	t
+$(WORK_DIR)/lpm_pack/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/lpm_pack\/$(DEP_FILE): lpm_pack.vhd$/;"	t
+$(WORK_DIR)/mem_ctrl/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/mem_ctrl\/$(DEP_FILE): mlite_pack.vhd mem_ctrl.vhd$/;"	t
+$(WORK_DIR)/mlite_cpu/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/mlite_cpu\/$(DEP_FILE): mlite_cpu.vhd \\$/;"	t
+$(WORK_DIR)/mlite_pack/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/mlite_pack\/$(DEP_FILE): mlite_pack.vhd$/;"	t
+$(WORK_DIR)/mult/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/mult\/$(DEP_FILE): mlite_pack.vhd mult.vhd$/;"	t
+$(WORK_DIR)/pc_next/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/pc_next\/$(DEP_FILE): mlite_pack.vhd pc_next.vhd$/;"	t
+$(WORK_DIR)/pipeline/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/pipeline\/$(DEP_FILE): mlite_pack.vhd pipeline.vhd$/;"	t
+$(WORK_DIR)/plasma/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/plasma\/$(DEP_FILE): mlite_pack.vhd plasma.vhd \\$/;"	t
+$(WORK_DIR)/plasma_if/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/plasma_if\/$(DEP_FILE): mlite_pack.vhd plasma_if.vhd \\$/;"	t
+$(WORK_DIR)/ram/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/ram\/$(DEP_FILE): mlite_pack.vhd ram.vhd$/;"	t
+$(WORK_DIR)/reg_bank/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/reg_bank\/$(DEP_FILE): mlite_pack.vhd reg_bank.vhd $/;"	t
+$(WORK_DIR)/shifter/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/shifter\/$(DEP_FILE): mlite_pack.vhd shifter.vhd$/;"	t
+$(WORK_DIR)/tbench/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/tbench\/$(DEP_FILE): mlite_pack.vhd tbench.vhd \\$/;"	t
+$(WORK_DIR)/uart/$(DEP_FILE)	makefile	/^$(WORK_DIR)\/uart\/$(DEP_FILE): mlite_pack.vhd uart.vhd$/;"	t
+%.o	build_dir/Makefile	/^%.o: %.vhd$/;"	t
+C	work/uart/logic.asm	/^/;"	l
+COMPILE	makefile	/^COMPILE = vhdlp -s$/;"	m
+DEP_FILE	makefile	/^DEP_FILE = prim.dep$/;"	m
+GCC_PARAMS	build_dir/Makefile	/^GCC_PARAMS=$/;"	m
+GHDL_FLAGS	build_dir/Makefile	/^GHDL_FLAGS = --ieee=synopsys -fexplicit -P$(GHDL_LIBS)$/;"	m
+GHDL_LIBS	build_dir/Makefile	/^GHDL_LIBS = $(ISE_DIR)\/ghdl\/unisim$/;"	m
+ISE_DIR	build_dir/Makefile	/^ISE_DIR=\/opt\/Xilinx\/11.1\/ISE$/;"	m
+NAME	build_dir/Makefile	/^NAME=main$/;"	m
+OBJDIR	build_dir/Makefile	/^OBJDIR = obj$/;"	m
+OBJS	build_dir/Makefile	/^OBJS = $(VHDL:.vhd=.o)$/;"	m
+PROJ_VHDL	build_dir/Makefile	/^PROJ_VHDL = \\$/;"	m
+SIM_DIR	build_dir/Makefile	/^SIM_DIR = $(VHDL_DIR)\/simulation$/;"	m
+SIM_TOP	build_dir/Makefile	/^SIM_TOP = tbench$/;"	m
+SIM_VHDL	build_dir/Makefile	/^SIM_VHDL = \\$/;"	m
+TARGET_VHDL	build_dir/Makefile	/^TARGET_VHDL =$/;"	m
+TOOLS	build_dir/Makefile	/^TOOLS = ..\/..\/tools$/;"	m
+VHDL_DIR	build_dir/Makefile	/^VHDL_DIR = ..$/;"	m
+WORK_DIR	makefile	/^WORK_DIR = work.sym$/;"	m
+address_array_type	ddr_ctrl.vhd	/^   type address_array_type is array(3 downto 0) of std_logic_vector(12 downto 0);$/;"	t
+all	build_dir/Makefile	/^all: simtest$/;"	t
+all	makefile	/^all: $(WORK_DIR)\/tbench\/$(DEP_FILE) $/;"	t
+altera	makefile	/^altera: $(WORK_DIR)\/lpm_pack\/$(DEP_FILE) \\$/;"	t
+alu	alu.vhd	/^entity alu is$/;"	e
+amux	bus_mux.vhd	/^amux: process(reg_source, imm_in, a_mux, c_pc) $/;"	p
+bitfile	build_dir/Makefile	/^bitfile:  generated step0 step1 step2 step3 step4 step5$/;"	t
+bmux	bus_mux.vhd	/^bmux: process(reg_target, imm_in, b_mux) $/;"	p
+bus_mux	bus_mux.vhd	/^entity bus_mux is$/;"	e
+bv_adder	mlite_pack.vhd	/^   function bv_adder(a     : in std_logic_vector;$/;"	f
+bv_adder	mlite_pack.vhd	/^function bv_adder(a     : in std_logic_vector;$/;"	f
+bv_inc	mlite_pack.vhd	/^   function bv_inc(a : in std_logic_vector$/;"	f
+bv_inc	mlite_pack.vhd	/^function bv_inc(a : in std_logic_vector$/;"	f
+bv_increment	mlite_pack.vhd	/^   function bv_increment(a : in std_logic_vector(31 downto 2)$/;"	f
+bv_increment	mlite_pack.vhd	/^function bv_increment(a : in std_logic_vector(31 downto 2)$/;"	f
+bv_negate	mlite_pack.vhd	/^   function bv_negate(a : in std_logic_vector) return std_logic_vector;$/;"	f
+bv_negate	mlite_pack.vhd	/^function bv_negate(a : in std_logic_vector) return std_logic_vector is$/;"	f
+cache	cache.vhd	/^entity cache is$/;"	e
+cache	makefile	/^cache:$/;"	t
+cache_proc	cache.vhd	/^   cache_proc: process(clk, reset, mem_busy, cache_address, $/;"	p
+cache_tag	cache.vhd	/^      cache_tag: process(clk, cache_address, cache_tag_in, cache_we)$/;"	p
+clean	build_dir/Makefile	/^clean:$/;"	t
+clk_div	plasma_3e.vhd	/^   clk_div: process(reset, CLK_50MHZ, clk_reg)$/;"	p
+clk_div	plasma_if.vhd	/^   clk_div: process(reset, clk_in, clk_reg, we_n_next)$/;"	p
+cmux	bus_mux.vhd	/^cmux: process(c_bus, c_memory, c_pc, c_pc_plus4, imm_in, c_mux) $/;"	p
+control	control.vhd	/^entity control is$/;"	e
+control_proc	control.vhd	/^control_proc: process(opcode, intr_signal) $/;"	p
+ddr_ctrl	ddr_ctrl.vhd	/^entity ddr_ctrl is$/;"	e
+ddr_proc	ddr_ctrl.vhd	/^   ddr_proc: process(clk, clk_p, clk_2x, reset_in, $/;"	p
+dma_proc	eth_dma.vhd	/^   dma_proc: process(clk, reset, enable_eth, select_eth, $/;"	p
+dpram_bypass	reg_bank.vhd	/^      dpram_bypass: process(clk, addr_write, reg_dest_new, write_enable)$/;"	p
+dram_proc	tbench.vhd	/^   dram_proc: process(clk, address, byte_we, data_write, pause)$/;"	p
+eth_dma	eth_dma.vhd	/^entity eth_dma is port($/;"	e
+flash_ctrl	plasma_3e.vhd	/^   flash_ctrl: process(reset, clk_reg, flash_active, write_enable, $/;"	p
+generated	build_dir/Makefile	/^generated: $/;"	t
+generated/main.bit	build_dir/Makefile	/^generated\/main.bit: bitfile$/;"	t
+generated/main.mcs	build_dir/Makefile	/^generated\/main.mcs: mcs$/;"	t
+impact	build_dir/Makefile	/^impact:$/;"	t
+intr_proc	mlite_cpu.vhd	/^   intr_proc: process(clk, reset_in, reset_reg, intr_in, intr_enable, $/;"	p
+ise	build_dir/Makefile	/^ise: $(NAME).prj$/;"	t
+load	build_dir/Makefile	/^load: generated\/main.mcs$/;"	t
+logic	alu.vhd	/^architecture logic of alu is$/;"	a
+logic	bus_mux.vhd	/^architecture logic of bus_mux is$/;"	a
+logic	cache.vhd	/^architecture logic of cache is$/;"	a
+logic	control.vhd	/^architecture logic of control is$/;"	a
+logic	ddr_ctrl.vhd	/^architecture logic of ddr_ctrl is$/;"	a
+logic	eth_dma.vhd	/^architecture logic of eth_dma is$/;"	a
+logic	mem_ctrl.vhd	/^architecture logic of mem_ctrl is$/;"	a
+logic	mlite_cpu.vhd	/^architecture logic of mlite_cpu is$/;"	a
+logic	mult.vhd	/^architecture logic of mult is$/;"	a
+logic	pc_next.vhd	/^architecture logic of pc_next is$/;"	a
+logic	pipeline.vhd	/^architecture logic of pipeline is$/;"	a
+logic	plasma.vhd	/^architecture logic of plasma is$/;"	a
+logic	plasma_3e.vhd	/^architecture logic of plasma_3e is$/;"	a
+logic	plasma_if.vhd	/^architecture logic of plasma_if is$/;"	a
+logic	ram.vhd	/^architecture logic of ram is$/;"	a
+logic	ram_image.vhd	/^architecture logic of ram is$/;"	a
+logic	ram_xilinx.vhd	/^architecture logic of ram is$/;"	a
+logic	shifter.vhd	/^architecture logic of shifter is$/;"	a
+logic	tbench.vhd	/^architecture logic of tbench is$/;"	a
+logic	uart.vhd	/^architecture logic of uart is$/;"	a
+mcs	build_dir/Makefile	/^mcs:  generated\/main.bit$/;"	t
+mem32_vector	ram_image.vhd	/^   type mem32_vector IS ARRAY (NATURAL RANGE<>) OF std_logic_vector(31 downto 0);$/;"	t
+mem32_vector	ram_xilinx.vhd	/^   type mem32_vector IS ARRAY (NATURAL RANGE<>) OF std_logic_vector(31 downto 0);$/;"	t
+mem_ctrl	mem_ctrl.vhd	/^entity mem_ctrl is$/;"	e
+mem_proc	mem_ctrl.vhd	/^mem_proc: process(clk, reset_in, pause_in, nullify_op, $/;"	p
+misc_proc	plasma.vhd	/^   misc_proc: process(clk, reset, cpu_address, enable_misc,$/;"	p
+mlite_cpu	mlite_cpu.vhd	/^entity mlite_cpu is$/;"	e
+mlite_pack	mlite_pack.vhd	/^package body mlite_pack is$/;"	b
+mlite_pack	mlite_pack.vhd	/^package mlite_pack is$/;"	d
+mult	mult.vhd	/^entity mult is$/;"	e
+mult_proc	mult.vhd	/^   mult_proc: process(clk, reset_in, a, b, mult_func,$/;"	p
+old	build_dir/Makefile	/^old:  workdir $(OBJS)$/;"	t
+opcodes	makefile	/^opcodes: all$/;"	t
+pc_mux	bus_mux.vhd	/^pc_mux: process(branch_func, reg_source, reg_target) $/;"	p
+pc_next	pc_next.vhd	/^entity pc_next is$/;"	e
+pc_select	pc_next.vhd	/^pc_select: process(clk, reset_in, pc_new, take_branch, pause_in, $/;"	p
+pipeline	pipeline.vhd	/^entity pipeline is$/;"	e
+pipeline3	pipeline.vhd	/^pipeline3: process(clk, reset, a_bus, b_bus, alu_func, shift_func, mult_func,$/;"	p
+plasma	plasma.vhd	/^entity plasma is$/;"	e
+plasma_3e	plasma_3e.vhd	/^entity plasma_3e is$/;"	e
+plasma_if	plasma_if.vhd	/^entity plasma_if is$/;"	e
+proc_blocksel	ram_image.vhd	/^   proc_blocksel: process (clk, block_sel) is$/;"	p
+proc_blocksel	ram_xilinx.vhd	/^   proc_blocksel: process (clk, block_sel) is$/;"	p
+proc_do	ram_image.vhd	/^   proc_do: process (block_do, block_sel_buf) is$/;"	p
+proc_do	ram_xilinx.vhd	/^   proc_do: process (block_do, block_sel_buf) is$/;"	p
+ram	ram.vhd	/^entity ram is$/;"	e
+ram	ram_image.vhd	/^entity ram is$/;"	e
+ram	ram_xilinx.vhd	/^entity ram is$/;"	e
+ram_block	reg_bank.vhd	/^architecture ram_block of reg_bank is$/;"	a
+ram_proc	plasma.vhd	/^   ram_proc: process(cache_access, cache_miss,$/;"	p
+ram_proc	ram.vhd	/^   ram_proc: process(clk, enable, write_byte_enable, $/;"	p
+ram_proc	reg_bank.vhd	/^      ram_proc: process(clk, addr_read1, addr_read2, $/;"	p
+ram_proc2	reg_bank.vhd	/^      ram_proc2: process(clk, addr_read1, addr_read2, $/;"	p
+ram_type	reg_bank.vhd	/^   type ram_type is array(31 downto 0) of std_logic_vector(31 downto 0);$/;"	t
+reg_bank	reg_bank.vhd	/^entity reg_bank is$/;"	e
+reg_proc	reg_bank.vhd	/^reg_proc: process(clk, rs_index, rt_index, rd_index, reg_dest_new, $/;"	p
+run	makefile	/^run: all$/;"	t
+run2	makefile	/^run2: all$/;"	t
+run3	makefile	/^run3: all$/;"	t
+shifter	shifter.vhd	/^entity shifter is$/;"	e
+sim	build_dir/Makefile	/^sim:$/;"	t
+simtest	build_dir/Makefile	/^simtest: workdir generated$/;"	t
+simulate	makefile	/^simulate: all$/;"	t
+simulate2	makefile	/^simulate2: all$/;"	t
+step0	build_dir/Makefile	/^step0: $(NAME).prj $/;"	t
+step1	build_dir/Makefile	/^step1:$/;"	t
+step2	build_dir/Makefile	/^step2:$/;"	t
+step3	build_dir/Makefile	/^step3:$/;"	t
+step4	build_dir/Makefile	/^step4:$/;"	t
+step5	build_dir/Makefile	/^step5:$/;"	t
+storage_array	cache.vhd	/^         type storage_array is$/;"	t
+storage_array	ram.vhd	/^      type storage_array is$/;"	t
+storage_array	tbench.vhd	/^      type storage_array is$/;"	t
+tbench	tbench.vhd	/^entity tbench is$/;"	e
+uart	uart.vhd	/^entity uart is$/;"	e
+uart_proc	uart.vhd	/^      uart_proc: process(clk, enable_write, data_in)$/;"	p
+uart_proc	uart.vhd	/^uart_proc: process(clk, reset, enable_read, enable_write, data_in,$/;"	p
+view	build_dir/Makefile	/^view:$/;"	t
+workdir	build_dir/Makefile	/^workdir:$/;"	t

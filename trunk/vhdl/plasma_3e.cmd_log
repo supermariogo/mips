@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 
+xst -intstyle ise -ifn "G:/mips/code/trunk/vhdl/plasma_3e.xst" -ofn "G:/mips/code/trunk/vhdl/plasma_3e.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan3e.ucf -p xc3s500e-fg320-4 plasma_3e.ngc plasma_3e.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o plasma_3e_map.ncd plasma_3e.ngd plasma_3e.pcf 
+par -w -intstyle ise -ol high -t 1 plasma_3e_map.ncd plasma_3e.ncd plasma_3e.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml plasma_3e.twx plasma_3e.ncd -o plasma_3e.twr plasma_3e.pcf -ucf spartan3e.ucf 
+bitgen -intstyle ise -f plasma_3e.ut plasma_3e.ncd 

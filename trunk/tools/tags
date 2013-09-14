@@ -1,0 +1,346 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$B1	.\opcodes.asm	/^$B1:$/;"	l
+$BAL1	.\opcodes.asm	/^$BAL1:$/;"	l
+$BAL2	.\opcodes.asm	/^$BAL2:$/;"	l
+$BEQ1	.\opcodes.asm	/^$BEQ1:$/;"	l
+$BGEZ1	.\opcodes.asm	/^$BGEZ1:$/;"	l
+$BGEZ2	.\opcodes.asm	/^$BGEZ2:$/;"	l
+$BGEZAL1	.\opcodes.asm	/^$BGEZAL1:$/;"	l
+$BGEZAL2	.\opcodes.asm	/^$BGEZAL2:$/;"	l
+$BGTZ1	.\opcodes.asm	/^$BGTZ1:$/;"	l
+$BLEZ1	.\opcodes.asm	/^$BLEZ1:$/;"	l
+$BLEZ2	.\opcodes.asm	/^$BLEZ2:$/;"	l
+$BLTZ1	.\opcodes.asm	/^$BLTZ1:$/;"	l
+$BLTZ2	.\opcodes.asm	/^$BLTZ2:$/;"	l
+$BLTZAL1	.\opcodes.asm	/^$BLTZAL1:$/;"	l
+$BLTZAL2	.\opcodes.asm	/^$BLTZAL2:$/;"	l
+$BNE1	.\opcodes.asm	/^$BNE1:$/;"	l
+$BSS_CLEAR	.\boot.asm	/^$BSS_CLEAR:$/;"	l
+$DONE	.\opcodes.asm	/^$DONE:$/;"	l
+$J1	.\opcodes.asm	/^$J1:$/;"	l
+$JAL1	.\opcodes.asm	/^$JAL1:$/;"	l
+$JAL2	.\opcodes.asm	/^$JAL2:$/;"	l
+$JALR1	.\opcodes.asm	/^$JALR1:$/;"	l
+$JALR2	.\opcodes.asm	/^$JALR2:$/;"	l
+$JR1	.\opcodes.asm	/^$JR1:$/;"	l
+$L1	.\boot.asm	/^$L1:$/;"	l
+ArthmeticTest	.\opcodes.asm	/^ArthmeticTest:$/;"	l
+BUF_SIZE	.\bintohex.c	6;"	d	file:
+BUF_SIZE	.\convert.c	9;"	d	file:
+BUF_SIZE	.\etermip.c	365;"	d	file:
+BUF_SIZE	.\ram_image.c	17;"	d	file:
+BUF_SIZE	.\tracehex.c	12;"	d	file:
+BranchTest	.\opcodes.asm	/^BranchTest:$/;"	l
+BreakTest	.\opcodes.asm	/^BreakTest:$/;"	l
+CACHE_LINE_SIZE	.\mlite.c	302;"	d	file:
+CACHE_LINE_SIZE_LN2	.\mlite.c	301;"	d	file:
+CACHE_MISS	.\mlite.c	468;"	d	file:
+CACHE_SET_ASSOC	.\mlite.c	298;"	d	file:
+CACHE_SET_ASSOC_LN2	.\mlite.c	297;"	d	file:
+CACHE_SIZE	.\mlite.c	300;"	d	file:
+CACHE_SIZE_LN2	.\mlite.c	299;"	d	file:
+CONFIG_REG	.\mlite.c	79;"	d	file:
+COUNTER_REG	.\plasma.h	29;"	d
+Checksum	.\etermip.c	/^static int PacketBytes, PacketLength, PacketChecksum, Checksum;$/;"	v	file:
+ChecksumError	.\etermip.c	/^static int ChecksumOk, ChecksumError;$/;"	v	file:
+ChecksumOk	.\etermip.c	/^static int ChecksumOk, ChecksumError;$/;"	v	file:
+DDR_BASE	.\ddr_init.c	16;"	d	file:
+DdrInit	.\ddr_init.c	/^int DdrInit(void)$/;"	f
+DdrInitData	.\ddr_init.c	/^int DdrInitData[] = {$/;"	v
+EI_NIDENT	.\convert.c	19;"	d	file:
+ELF_RegInfo	.\convert.c	/^} ELF_RegInfo;$/;"	t	typeref:struct:__anon4	file:
+ETHERNET_DEST	.\etermip.c	56;"	d	file:
+ETHERNET_ENABLE	.\plasma.h	37;"	d
+ETHERNET_FRAME_TYPE	.\etermip.c	58;"	d	file:
+ETHERNET_MDC	.\plasma.h	36;"	d
+ETHERNET_MDIO	.\plasma.h	34;"	d
+ETHERNET_MDIO_WE	.\plasma.h	35;"	d
+ETHERNET_RECEIVE	.\plasma.h	19;"	d
+ETHERNET_REG	.\plasma.h	30;"	d
+ETHERNET_SOURCE	.\etermip.c	57;"	d	file:
+ETHERNET_TRANSMIT	.\plasma.h	20;"	d
+Elf32_Phdr	.\convert.c	/^} Elf32_Phdr;$/;"	t	typeref:struct:__anon2	file:
+Elf32_Shdr	.\convert.c	/^} Elf32_Shdr;$/;"	t	typeref:struct:__anon3	file:
+ElfHeader	.\convert.c	/^} ElfHeader;$/;"	t	typeref:struct:__anon1	file:
+EthernetActive	.\etermip.c	/^static int EthernetActive;$/;"	v	file:
+EthernetSendPacket	.\etermip.c	/^void EthernetSendPacket(const unsigned char *packet, int length)$/;"	f
+FLASH_BASE	.\plasma.h	31;"	d
+FlashErase	.\bootldr.c	/^void FlashErase(uint32 byteOffset)$/;"	f
+FlashRead	.\bootldr.c	/^void FlashRead(uint16 *dst, uint32 byteOffset, int bytes)$/;"	f
+FlashWrite	.\bootldr.c	/^void FlashWrite(uint16 *src, uint32 byteOffset, int bytes)$/;"	f
+FuncPtr	.\bootldr.c	/^typedef void (*FuncPtr)(void);$/;"	t	file:
+FuncPtr	.\count.c	/^typedef void (*FuncPtr)(void);$/;"	t	file:
+GPIO0_CLEAR	.\plasma.h	27;"	d
+GPIO0_SET	.\plasma.h	26;"	d
+GPIOA_IN	.\plasma.h	28;"	d
+HWMemory	.\mlite.c	/^static unsigned int HWMemory[8];$/;"	v	file:
+IP_PROTOCOL	.\etermip.c	59;"	d	file:
+IP_SOURCE	.\etermip.c	60;"	d	file:
+IRQ_COUNTER18	.\mlite.c	87;"	d	file:
+IRQ_COUNTER18	.\plasma.h	43;"	d
+IRQ_COUNTER18_NOT	.\mlite.c	86;"	d	file:
+IRQ_COUNTER18_NOT	.\plasma.h	42;"	d
+IRQ_ETHERNET_RECEIVE	.\plasma.h	44;"	d
+IRQ_ETHERNET_TRANSMIT	.\plasma.h	45;"	d
+IRQ_GPIO31	.\plasma.h	47;"	d
+IRQ_GPIO31_NOT	.\plasma.h	46;"	d
+IRQ_MASK	.\mlite.c	77;"	d	file:
+IRQ_MASK	.\plasma.h	24;"	d
+IRQ_MMU	.\mlite.c	88;"	d	file:
+IRQ_STATUS	.\mlite.c	78;"	d	file:
+IRQ_STATUS	.\plasma.h	25;"	d
+IRQ_UART_READ_AVAILABLE	.\mlite.c	84;"	d	file:
+IRQ_UART_READ_AVAILABLE	.\plasma.h	40;"	d
+IRQ_UART_WRITE_AVAILABLE	.\mlite.c	85;"	d	file:
+IRQ_UART_WRITE_AVAILABLE	.\plasma.h	41;"	d
+InterruptVector	.\opcodes.asm	/^InterruptVector:            #Address=0x3c$/;"	l
+LINE_SIZE	.\tracehex.c	13;"	d	file:
+LoadTest	.\opcodes.asm	/^LoadTest:$/;"	l
+LogicalTest	.\opcodes.asm	/^LogicalTest:$/;"	l
+MEM_SIZE	.\mlite.c	23;"	d	file:
+MISC_BASE	.\plasma.h	21;"	d
+MMU_ENTRIES	.\mlite.c	90;"	d	file:
+MMU_FAULT_ADDR	.\mlite.c	81;"	d	file:
+MMU_MASK	.\mlite.c	91;"	d	file:
+MMU_PROCESS_ID	.\mlite.c	80;"	d	file:
+MMU_TLB	.\mlite.c	82;"	d	file:
+MemoryRead	.\bootldr.c	14;"	d	file:
+MemoryRead	.\ddr_init.c	17;"	d	file:
+MemoryRead	.\no_os.c	3;"	d	file:
+MemoryWrite	.\bootldr.c	15;"	d	file:
+MemoryWrite	.\ddr_init.c	18;"	d	file:
+MemoryWrite	.\no_os.c	4;"	d	file:
+MmuEntry	.\mlite.c	/^} MmuEntry;$/;"	t	typeref:struct:__anon5	file:
+MoveTest	.\opcodes.asm	/^MoveTest:$/;"	l
+NoPatch	.\opcodes.asm	/^NoPatch:$/;"	l
+OS_AsmInterruptEnable	.\boot.asm	/^OS_AsmInterruptEnable:$/;"	l
+OS_AsmInterruptInit	.\boot.asm	/^OS_AsmInterruptInit:$/;"	l
+OS_AsmMult	.\boot.asm	/^OS_AsmMult:$/;"	l
+OS_AsmPatchValue	.\boot.asm	/^OS_AsmPatchValue:$/;"	l
+OS_AsmPatchValue	.\opcodes.asm	/^OS_AsmPatchValue:$/;"	l
+OS_InterruptServiceRoutine	.\no_os.c	/^void OS_InterruptServiceRoutine(unsigned int status)$/;"	f
+OS_InterruptServiceRoutine	.\pi.c	/^void OS_InterruptServiceRoutine(unsigned int status)$/;"	f
+OS_Syscall	.\boot.asm	/^OS_Syscall:$/;"	l
+PACKET_SIZE	.\etermip.c	61;"	d	file:
+PCAP_ERRBUF_SIZE	.\etermip.c	32;"	d	file:
+PT_MIPS_REGINFO	.\convert.c	79;"	d	file:
+PacketBytes	.\etermip.c	/^static int PacketBytes, PacketLength, PacketChecksum, Checksum;$/;"	v	file:
+PacketChecksum	.\etermip.c	/^static int PacketBytes, PacketLength, PacketChecksum, Checksum;$/;"	v	file:
+PacketData	.\etermip.c	/^static unsigned char PacketData[2000];$/;"	v	file:
+PacketLength	.\etermip.c	/^static int PacketBytes, PacketLength, PacketChecksum, Checksum;$/;"	v	file:
+RAM_BLOCKS	.\ram_image.c	20;"	d	file:
+RAM_DWORDPERROW	.\ram_image.c	24;"	d	file:
+RAM_EXTERNAL_BASE	.\plasma.h	17;"	d
+RAM_EXTERNAL_SIZE	.\plasma.h	18;"	d
+RAM_INTERNAL_BASE	.\plasma.h	16;"	d
+RAM_ROWS	.\ram_image.c	22;"	d	file:
+RAM_ROWS_TOTAL	.\ram_image.c	23;"	d	file:
+RAM_SPLIT	.\ram_image.c	21;"	d	file:
+SHT_MIPS_REGINFO	.\convert.c	80;"	d	file:
+SHT_NOBITS	.\convert.c	22;"	d	file:
+SHT_PROGBITS	.\convert.c	20;"	d	file:
+SHT_STRTAB	.\convert.c	21;"	d	file:
+SIMPLE_CACHE	.\mlite.c	21;"	d	file:
+SendFile	.\etermip.c	/^void SendFile(void)$/;"	f
+SerialOpen	.\etermip.c	/^long SerialOpen(char *name, long baud)$/;"	f
+SerialRead	.\etermip.c	/^long SerialRead(unsigned char *data, unsigned long length)$/;"	f
+ShiftTest	.\opcodes.asm	/^ShiftTest:$/;"	l
+StartTest	.\opcodes.asm	/^StartTest:$/;"	l
+State	.\mlite.c	/^} State;$/;"	t	typeref:struct:__anon6	file:
+UART_READ	.\mlite.c	76;"	d	file:
+UART_READ	.\plasma.h	23;"	d
+UART_WRITE	.\mlite.c	75;"	d	file:
+UART_WRITE	.\plasma.h	22;"	d
+UNICODE	.\etermip.c	16;"	d	file:
+USE_WPCAP	.\etermip.c	24;"	d	file:
+UartPacketRead	.\etermip.c	/^static void UartPacketRead(int value)$/;"	f	file:
+WinPcapInit	.\etermip.c	/^int WinPcapInit(void)$/;"	f
+_CRT_SECURE_NO_WARNINGS	.\etermip.c	15;"	d	file:
+__PLASMA_H__	.\plasma.h	13;"	d
+__PRESENT_H__	.\present.h	43;"	d
+a	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+abc	.\test.c	/^int abc;$/;"	v
+addresses	.\etermip.c	/^      struct pcap_addr *addresses;$/;"	m	struct:pcap_if	typeref:struct:pcap_if::pcap_addr	file:
+adhandle	.\etermip.c	/^static pcap_t *adhandle;$/;"	v	file:
+b	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+big_endian	.\mlite.c	/^   int big_endian;$/;"	m	struct:__anon6	file:
+buf	.\test.c	/^char buf[20];$/;"	v
+c	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+cacheAddr	.\mlite.c	/^static int cacheAddr[CACHE_SET_ASSOC][CACHE_SIZE\/CACHE_LINE_SIZE];$/;"	v	file:
+cacheAddr	.\mlite.c	/^static unsigned int cacheAddr[1024]; \/\/9-bit addresses$/;"	v	file:
+cacheCount	.\mlite.c	/^static int cacheMiss, cacheWriteBack, cacheCount;$/;"	v	file:
+cacheData	.\mlite.c	/^static int cacheData[CACHE_SET_ASSOC][CACHE_SIZE\/sizeof(int)];$/;"	v	file:
+cacheData	.\mlite.c	/^static unsigned int cacheData[1024];$/;"	v	file:
+cacheInit	.\mlite.c	/^static int cacheTry, cacheMiss, cacheInit;$/;"	v	file:
+cacheMiss	.\mlite.c	/^static int cacheMiss, cacheWriteBack, cacheCount;$/;"	v	file:
+cacheMiss	.\mlite.c	/^static int cacheTry, cacheMiss, cacheInit;$/;"	v	file:
+cacheSetNext	.\mlite.c	/^static int cacheSetNext;$/;"	v	file:
+cacheTry	.\mlite.c	/^static int cacheTry, cacheMiss, cacheInit;$/;"	v	file:
+cacheWriteBack	.\mlite.c	/^static int cacheMiss, cacheWriteBack, cacheCount;$/;"	v	file:
+cache_init	.\mlite.c	/^static void cache_init(void) {}$/;"	f	file:
+cache_init	.\mlite.c	/^static void cache_init(void)$/;"	f	file:
+cache_load	.\mlite.c	/^static int cache_load(State *s, unsigned int address, int write)$/;"	f	file:
+cache_read	.\mlite.c	/^static int cache_read(State *s, int size, unsigned int address)$/;"	f	file:
+cache_write	.\mlite.c	/^static void cache_write(State *s, int size, int unsigned address, unsigned int value)$/;"	f	file:
+caplen	.\etermip.c	/^      unsigned long caplen;	\/* length of portion present *\/$/;"	m	struct:pcap_pkthdr	file:
+cycle	.\mlite.c	/^void cycle(State *s, int show_mode)$/;"	f
+d	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+description	.\etermip.c	/^      char *description;	\/* textual description of interface, or NULL *\/$/;"	m	struct:pcap_if	file:
+do_debug	.\mlite.c	/^void do_debug(State *s)$/;"	f
+drop_char	.\tracehex.c	/^char drop_char[10000];$/;"	v
+e	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+e_e_type	.\convert.c	/^   uint16 e_e_type;$/;"	m	struct:__anon1	file:
+e_ehsize	.\convert.c	/^   uint16 e_ehsize;$/;"	m	struct:__anon1	file:
+e_entry	.\convert.c	/^   uint32 e_entry;$/;"	m	struct:__anon1	file:
+e_flags	.\convert.c	/^   uint32 e_flags;$/;"	m	struct:__anon1	file:
+e_ident	.\convert.c	/^   uint8 e_ident[EI_NIDENT];$/;"	m	struct:__anon1	file:
+e_machine	.\convert.c	/^   uint16 e_machine;$/;"	m	struct:__anon1	file:
+e_phentsize	.\convert.c	/^   uint16 e_phentsize;$/;"	m	struct:__anon1	file:
+e_phnum	.\convert.c	/^   uint16 e_phnum;$/;"	m	struct:__anon1	file:
+e_phoff	.\convert.c	/^   uint32 e_phoff;$/;"	m	struct:__anon1	file:
+e_shentsize	.\convert.c	/^   uint16 e_shentsize;$/;"	m	struct:__anon1	file:
+e_shnum	.\convert.c	/^   uint16 e_shnum;$/;"	m	struct:__anon1	file:
+e_shoff	.\convert.c	/^   uint32 e_shoff;$/;"	m	struct:__anon1	file:
+e_shstrndx	.\convert.c	/^   uint16 e_shstrndx;$/;"	m	struct:__anon1	file:
+e_version	.\convert.c	/^   uint32 e_version;$/;"	m	struct:__anon1	file:
+entry	.\boot.asm	/^entry:$/;"	l
+entry	.\opcodes.asm	/^entry:$/;"	l
+epc	.\mlite.c	/^   int pc, pc_next, epc;$/;"	m	struct:__anon6	file:
+ethFrame	.\etermip.c	/^   static void *ethFrame;$/;"	v	file:
+ethernetAddressNull	.\etermip.c	/^static const unsigned char ethernetAddressNull[] =    {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};$/;"	v	file:
+ethernetAddressPhantom	.\etermip.c	/^static const unsigned char ethernetAddressPhantom[] = {0x00, 0x10, 0xdd, 0xce, 0x15, 0xd4};$/;"	v	file:
+ethernetAddressPhantom2	.\etermip.c	/^static const unsigned char ethernetAddressPhantom2[] = {0x00, 0x10, 0xdd, 0xce, 0x15, 0xd5};$/;"	v	file:
+exceptionId	.\mlite.c	/^   int exceptionId;$/;"	m	struct:__anon6	file:
+f	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+faultAddr	.\mlite.c	/^   int faultAddr;$/;"	m	struct:__anon6	file:
+flags	.\etermip.c	/^      unsigned long flags;	\/* PCAP_IF_ interface flags *\/$/;"	m	struct:pcap_if	file:
+g	.\pi.c	/^long a=10000,b,c=56,d,e,f[57],g;$/;"	v
+getch	.\no_os.c	/^int getch(void)$/;"	f
+getnum	.\bootldr.c	/^unsigned long getnum(void)  \/\/获取输入的数据的真实值, 因为输入的是ansic 所以要转换$/;"	f
+hi	.\mlite.c	/^   unsigned int hi;$/;"	m	struct:__anon6	file:
+htonl	.\mlite.c	27;"	d	file:
+htons	.\mlite.c	25;"	d	file:
+interrupt_service_routine	.\boot.asm	/^interrupt_service_routine:$/;"	l
+irqStatus	.\mlite.c	/^   int irqStatus;$/;"	m	struct:__anon6	file:
+isr_return	.\boot.asm	/^isr_return:$/;"	l
+itoa10	.\count.c	/^char *itoa10(unsigned long num)$/;"	f
+itoa2	.\test.c	/^static void itoa2(long n, char *s, int base, long *digits)$/;"	f	file:
+kbhit	.\no_os.c	/^int kbhit(void)$/;"	f
+len	.\etermip.c	/^      unsigned long len;	\/* length this packet (off wire) *\/$/;"	m	struct:pcap_pkthdr	file:
+lo	.\mlite.c	/^   unsigned int lo;$/;"	m	struct:__anon6	file:
+longjmp	.\boot.asm	/^longjmp:$/;"	l
+main	.\bintohex.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\bootldr.c	/^int main(void)$/;"	f
+main	.\convert.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\count.c	/^int main()$/;"	f
+main	.\ddr_init.c	/^int main()$/;"	f
+main	.\etermip.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\hello.c	/^int main(void)$/;"	f
+main	.\mlite.c	/^int main(int argc,char *argv[])$/;"	f
+main	.\pi.c	/^int main()$/;"	f
+main	.\present.c	/^int main(void)$/;"	f
+main	.\ram_image.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\test.c	/^int main(void)$/;"	f
+main	.\tracehex.c	/^int main(int argc, char *argv[])$/;"	f
+mem	.\mlite.c	/^   unsigned char *mem;$/;"	m	struct:__anon6	file:
+mem_read	.\mlite.c	/^static int mem_read(State *s, int size, unsigned int address)$/;"	f	file:
+mem_read	.\mlite.c	457;"	d	file:
+mem_read	.\mlite.c	538;"	d	file:
+mem_write	.\mlite.c	/^static void mem_write(State *s, int size, int unsigned address, unsigned int value)$/;"	f	file:
+mem_write	.\mlite.c	458;"	d	file:
+mem_write	.\mlite.c	539;"	d	file:
+mmuEntry	.\mlite.c	/^   MmuEntry mmuEntry[MMU_ENTRIES];$/;"	m	struct:__anon6	file:
+mmu_lookup	.\mlite.c	/^unsigned int mmu_lookup(State *s, unsigned int processId, $/;"	f
+mult_big	.\mlite.c	/^void mult_big(unsigned int a, $/;"	f
+mult_big_signed	.\mlite.c	/^void mult_big_signed(int a, $/;"	f
+name	.\count.c	/^char *name[] = {$/;"	v
+name	.\etermip.c	/^      char *name;		\/* name to hand to "pcap_open_live()" *\/$/;"	m	struct:pcap_if	file:
+next	.\etermip.c	/^      struct pcap_if *next;$/;"	m	struct:pcap_if	typeref:struct:pcap_if::pcap_if	file:
+ntohl	.\convert.c	12;"	d	file:
+ntohl	.\convert.c	15;"	d	file:
+ntohl	.\mlite.c	26;"	d	file:
+ntohs	.\convert.c	13;"	d	file:
+ntohs	.\convert.c	16;"	d	file:
+ntohs	.\mlite.c	24;"	d	file:
+number_text	.\count.c	/^void number_text(unsigned long number)$/;"	f
+opcode_string	.\mlite.c	/^static char *opcode_string[]={$/;"	v	file:
+p_align	.\convert.c	/^   uint32 p_align;$/;"	m	struct:__anon2	file:
+p_filesz	.\convert.c	/^   uint32 p_filesz;$/;"	m	struct:__anon2	file:
+p_flags	.\convert.c	/^   uint32 p_flags;$/;"	m	struct:__anon2	file:
+p_memsz	.\convert.c	/^   uint32 p_memsz;$/;"	m	struct:__anon2	file:
+p_offset	.\convert.c	/^   uint32 p_offset;$/;"	m	struct:__anon2	file:
+p_paddr	.\convert.c	/^   uint32 p_paddr;$/;"	m	struct:__anon2	file:
+p_type	.\convert.c	/^   uint32 p_type;$/;"	m	struct:__anon2	file:
+p_vaddr	.\convert.c	/^   uint32 p_vaddr;$/;"	m	struct:__anon2	file:
+packet_handler	.\etermip.c	/^void packet_handler(u_char *param, const struct pcap_pkthdr *header, const u_char *pkt_data)$/;"	f
+pc	.\mlite.c	/^   int pc, pc_next, epc;$/;"	m	struct:__anon6	file:
+pc_next	.\mlite.c	/^   int pc, pc_next, epc;$/;"	m	struct:__anon6	file:
+pcap_if	.\etermip.c	/^   typedef struct pcap_if {$/;"	s	file:
+pcap_if_t	.\etermip.c	/^   } pcap_if_t;$/;"	t	typeref:struct:pcap_if	file:
+pcap_pkthdr	.\etermip.c	/^   struct pcap_pkthdr {$/;"	s	file:
+pcap_t	.\etermip.c	/^   typedef struct pcap pcap_t;$/;"	t	typeref:struct:pcap	file:
+physicalAddress	.\mlite.c	/^   unsigned int physicalAddress;$/;"	m	struct:__anon5	file:
+present	.\present.h	52;"	d
+present_rounds	.\present.h	/^void present_rounds(const uint8_t *plain, const uint8_t *key, const uint8_t rounds, uint8_t *cipher)$/;"	f
+prime	.\test.c	/^int prime()$/;"	f
+print	.\test.c	/^void print(long num,long base,long digits)$/;"	f
+print_hex	.\no_os.c	/^void print_hex(unsigned long num)$/;"	f
+print_num	.\pi.c	/^void print_num(unsigned long num)$/;"	f
+print_string	.\test.c	/^void print_string(char *p)$/;"	f
+processId	.\mlite.c	/^   int processId;$/;"	m	struct:__anon6	file:
+putch	.\mlite.c	31;"	d	file:
+putchar	.\no_os.c	/^int putchar(int value)$/;"	f
+putchar	.\pi.c	/^int putchar(char ch)$/;"	f
+putchar	.\test.c	22;"	d	file:
+putchar	.\test.c	23;"	d	file:
+puts	.\no_os.c	/^int puts(const char *string)$/;"	f
+r	.\mlite.c	/^   int r[32];$/;"	m	struct:__anon6	file:
+regimm_string	.\mlite.c	/^static char *regimm_string[]={$/;"	v	file:
+ri_cprmask	.\convert.c	/^   uint32 ri_cprmask[4];$/;"	m	struct:__anon4	file:
+ri_gp_value	.\convert.c	/^   uint32 ri_gp_value;$/;"	m	struct:__anon4	file:
+ri_gprmask	.\convert.c	/^   uint32 ri_gprmask;$/;"	m	struct:__anon4	file:
+sbox	.\present.h	/^static const uint8_t sbox[16] = {$/;"	v
+sbox_pmt_0	.\present.h	/^static const uint8_t sbox_pmt_0[256] = {$/;"	v
+sbox_pmt_1	.\present.h	/^static const uint8_t sbox_pmt_1[256] = {$/;"	v
+sbox_pmt_2	.\present.h	/^static const uint8_t sbox_pmt_2[256] = {$/;"	v
+sbox_pmt_3	.\present.h	/^static const uint8_t sbox_pmt_3[256] = {$/;"	v
+serial_handle	.\etermip.c	/^static HANDLE serial_handle;$/;"	v	file:
+set_low	.\convert.c	/^void set_low(uint8 *ptr, uint32 address, uint32 value)$/;"	f
+setjmp	.\boot.asm	/^setjmp:$/;"	l
+sh_addr	.\convert.c	/^   uint32 sh_addr;$/;"	m	struct:__anon3	file:
+sh_addralign	.\convert.c	/^   uint32 sh_addralign;$/;"	m	struct:__anon3	file:
+sh_entsize	.\convert.c	/^   uint32 sh_entsize;$/;"	m	struct:__anon3	file:
+sh_flags	.\convert.c	/^   uint32 sh_flags;$/;"	m	struct:__anon3	file:
+sh_info	.\convert.c	/^   uint32 sh_info;$/;"	m	struct:__anon3	file:
+sh_link	.\convert.c	/^   uint32 sh_link;$/;"	m	struct:__anon3	file:
+sh_name	.\convert.c	/^   uint32 sh_name;$/;"	m	struct:__anon3	file:
+sh_offset	.\convert.c	/^   uint32 sh_offset;$/;"	m	struct:__anon3	file:
+sh_size	.\convert.c	/^   uint32 sh_size;$/;"	m	struct:__anon3	file:
+sh_type	.\convert.c	/^   uint32 sh_type;$/;"	m	struct:__anon3	file:
+show_state	.\mlite.c	/^void show_state(State *s)$/;"	f
+skip	.\mlite.c	/^   int skip;$/;"	m	struct:__anon6	file:
+special_string	.\mlite.c	/^static char *special_string[]={$/;"	v	file:
+status	.\mlite.c	/^   int status;$/;"	m	struct:__anon6	file:
+strcpy2	.\test.c	/^char *strcpy2(char *s, const char *t)$/;"	f
+text	.\test.c	/^char text[]="Testing the Plasma core.\\n";$/;"	v
+ts	.\etermip.c	/^      struct timeval ts;	\/* time stamp *\/$/;"	m	struct:pcap_pkthdr	typeref:struct:pcap_pkthdr::timeval	file:
+uint16	.\bootldr.c	/^typedef unsigned short uint16;$/;"	t	file:
+uint16	.\convert.c	/^typedef unsigned short uint16;$/;"	t	file:
+uint16_t	.\present.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32	.\bootldr.c	/^typedef unsigned long uint32;$/;"	t	file:
+uint32	.\convert.c	/^typedef unsigned int   uint32;$/;"	t	file:
+uint32_t	.\present.h	/^typedef unsigned long uint32_t;$/;"	t
+uint64_t	.\present.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8	.\convert.c	/^typedef unsigned char  uint8;$/;"	t	file:
+uint8_t	.\present.h	/^typedef unsigned char uint8_t;$/;"	t
+userMode	.\mlite.c	/^   int userMode;$/;"	m	struct:__anon6	file:
+virtualAddress	.\mlite.c	/^   unsigned int virtualAddress;$/;"	m	struct:__anon5	file:
+wakeup	.\mlite.c	/^   int wakeup;$/;"	m	struct:__anon6	file:
+xtoa	.\bootldr.c	/^char *xtoa(unsigned long num)\/\/16进制转ANSIC？$/;"	f
+xtoa	.\count.c	/^char *xtoa(unsigned long num)$/;"	f
+xyz	.\test.c	/^int xyz=0xbadbeef;$/;"	v

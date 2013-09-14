@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+DEBUSSY_PLI	Makefile	/^DEBUSSY_PLI="${DEBUSSY_HOME}\/share\/PLI"$/;"	m
+PRUNE_DIR	Makefile	/^PRUNE_DIR="${WORK_DIR}\/prune"$/;"	m
+SIM_DIR	Makefile	/^SIM_DIR="${WORK_DIR}\/sim"$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR="${WORK_DIR}\/src"$/;"	m
+SYN_DIR	Makefile	/^SYN_DIR="${WORK_DIR}\/syn"$/;"	m
+TECH_VERILOG	Makefile	/^TECH_VERILOG="smic18.v"$/;"	m
+TEST_BENCH	Makefile	/^TEST_BENCH="tb_controller"$/;"	m
+TEST_BENCH_FILE	Makefile	/^TEST_BENCH_FILE="tb_controller.vhd"$/;"	m
+TEST_BENCH_FSDB	Makefile	/^TEST_BENCH_FSDB="tb_controller.fsdb"$/;"	m
+TOP_DESIGN	Makefile	/^TOP_DESIGN="controller"$/;"	m
+adder	adder.vhd	/^entity adder is$/;"	e
+alu	alu.vhd	/^entity alu is -- alu$/;"	e
+aludec	aludec.vhd	/^entity aludec is --ALU control decoder$/;"	e
+asy	flopr.vhd	/^   asy: process (clk, reset)$/;"	p
+asynchronous	flopr.vhd	/^architecture asynchronous of flopr is$/;"	a
+behave	adder.vhd	/^architecture behave of adder is$/;"	a
+behave	alu.vhd	/^architecture behave of alu is$/;"	a
+behave	aludec.vhd	/^architecture behave of aludec is $/;"	a
+behave	dmem.vhd	/^architecture behave of dmem is$/;"	a
+behave	imem.vhd	/^architecture behave of imem is$/;"	a
+behave	maindec.vhd	/^architecture behave of maindec is$/;"	a
+behave	mux2.vhd	/^architecture behave of mux2 is$/;"	a
+behave	regfile.vhd	/^architecture behave of regfile is$/;"	a
+behave	signext.vhd	/^architecture behave of signext is$/;"	a
+behave	sl2.vhd	/^architecture behave of sl2 is $/;"	a
+controller	controller.vhd	/^entity controller is -- single cycle control decoder$/;"	e
+datapath	datapath.vhd	/^entity datapath is -- MIPS datapath$/;"	e
+debug	Makefile	/^debug:$/;"	t
+default	Makefile	/^default:$/;"	t
+dmem	dmem.vhd	/^entity dmem is -- data memory$/;"	e
+flopr	flopr.vhd	/^entity flopr is -- flip-flop with synchronous reset$/;"	e
+fsdbDumpfile	novas.vhd	/^     procedure fsdbDumpfile(file_name : in string) is$/;"	r
+fsdbDumpfile	novas.vhd	/^   procedure fsdbDumpfile (file_name : in string);$/;"	r
+fsdbDumpvars	novas.vhd	/^     procedure fsdbDumpvars(depth : in integer;$/;"	r
+fsdbDumpvars	novas.vhd	/^   procedure fsdbDumpvars (depth : in integer;$/;"	r
+imem	imem.vhd	/^entity imem is -- instruction memory$/;"	e
+maindec	maindec.vhd	/^entity maindec is -- main control decoder$/;"	e
+mips	mips.vhd	/^entity mips is -- single cycle MIPS processor$/;"	e
+mux2	mux2.vhd	/^entity mux2 is$/;"	e
+novas	novas.vhd	/^ entity novas is end; $/;"	e
+novas_arch	novas.vhd	/^ architecture novas_arch of novas is$/;"	a
+pkg	novas.vhd	/^ package body pkg is $/;"	b
+pkg	novas.vhd	/^package pkg is$/;"	d
+ramtype	dmem.vhd	/^   type ramtype is array (63 downto 0) of STD_LOGIC_VECTOR (31 downto 0);$/;"	t
+ramtype	imem.vhd	/^   type ramtype is array (63 downto 0) of STD_LOGIC_VECTOR(31 downto 0);$/;"	t
+ramtype	regfile.vhd	/^    type ramtype is array(31 downto 0) of STD_LOGIC_VECTOR(31 downto 0);$/;"	t
+regfile	regfile.vhd	/^entity regfile is  -- 3 port register file$/;"	e
+signext	signext.vhd	/^entity signext is -- sign extender$/;"	e
+sim	Makefile	/^sim:$/;"	t
+sl2	sl2.vhd	/^entity sl2 is --shift left by 2$/;"	e
+struct	controller.vhd	/^architecture struct of controller is$/;"	a
+struct	datapath.vhd	/^architecture struct of datapath is$/;"	a
+struct	mips.vhd	/^architecture struct of mips is$/;"	a
+tb_controller	tb_controller.vhd	/^entity tb_controller is$/;"	e
+test	tb_controller.vhd	/^architecture test of tb_controller is$/;"	a
+test	testbench.vhd	/^architecture test of testbench is$/;"	a
+test	top.vhd	/^architecture test of top is$/;"	a
+testbench	testbench.vhd	/^entity testbench is$/;"	e
+top	top.vhd	/^entity top is -- top-level design for testing$/;"	e

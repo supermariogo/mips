@@ -1,0 +1,1732 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Reading design: plasma_3e.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "plasma_3e.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "plasma_3e"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : plasma_3e
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "G:/mips/code/trunk/vhdl/mlite_pack.vhd" in Library work.
+Architecture mlite_pack of Entity mlite_pack is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/pc_next.vhd" in Library work.
+Architecture logic of Entity pc_next is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/mem_ctrl.vhd" in Library work.
+Architecture logic of Entity mem_ctrl is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/control.vhd" in Library work.
+Architecture logic of Entity control is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/reg_bank.vhd" in Library work.
+Architecture ram_block of Entity reg_bank is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/bus_mux.vhd" in Library work.
+Architecture logic of Entity bus_mux is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/alu.vhd" in Library work.
+Architecture logic of Entity alu is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/shifter.vhd" in Library work.
+Architecture logic of Entity shifter is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/mult.vhd" in Library work.
+Architecture logic of Entity mult is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/pipeline.vhd" in Library work.
+Architecture logic of Entity pipeline is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/mlite_cpu.vhd" in Library work.
+Architecture logic of Entity mlite_cpu is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/cache.vhd" in Library work.
+Architecture logic of Entity cache is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/ram_xilinx.vhd" in Library work.
+Architecture logic of Entity ram is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/uart.vhd" in Library work.
+Architecture logic of Entity uart is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/eth_dma.vhd" in Library work.
+Architecture logic of Entity eth_dma is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/plasma.vhd" in Library work.
+Architecture logic of Entity plasma is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/ddr_ctrl.vhd" in Library work.
+Architecture logic of Entity ddr_ctrl is up to date.
+Compiling vhdl file "G:/mips/code/trunk/vhdl/plasma_3e.vhd" in Library work.
+Architecture logic of Entity plasma_3e is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <plasma_3e> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <plasma> in library <work> (architecture <logic>) with generics.
+	ethernet = '1'
+	log_file = "UNUSED"
+	memory_type = "XILINX_16X"
+	use_cache = '1'
+
+Analyzing hierarchy for entity <ddr_ctrl> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <mlite_cpu> in library <work> (architecture <logic>) with generics.
+	alu_type = "DEFAULT"
+	memory_type = "XILINX_16X"
+	mult_type = "DEFAULT"
+	pipeline_stages = 2
+	shifter_type = "DEFAULT"
+
+Analyzing hierarchy for entity <cache> in library <work> (architecture <logic>) with generics.
+	memory_type = "XILINX_16X"
+
+Analyzing hierarchy for entity <ram> in library <work> (architecture <logic>) with generics.
+	block_count = 1
+	memory_type = "XILINX_16X"
+
+Analyzing hierarchy for entity <uart> in library <work> (architecture <logic>) with generics.
+	log_file = "UNUSED"
+
+Analyzing hierarchy for entity <eth_dma> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <pc_next> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <mem_ctrl> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <control> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <reg_bank> in library <work> (architecture <ram_block>) with generics.
+	memory_type = "XILINX_16X"
+
+Analyzing hierarchy for entity <bus_mux> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <logic>) with generics.
+	alu_type = "DEFAULT"
+
+Analyzing hierarchy for entity <shifter> in library <work> (architecture <logic>) with generics.
+	shifter_type = "DEFAULT"
+
+Analyzing hierarchy for entity <mult> in library <work> (architecture <logic>) with generics.
+	mult_type = "DEFAULT"
+
+INFO:Xst:2555 - '-hierarchy_separator' switch is being deprecated in a future release.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <plasma_3e> in library <work> (Architecture <logic>).
+Entity <plasma_3e> analyzed. Unit <plasma_3e> generated.
+
+Analyzing generic Entity <plasma> in library <work> (Architecture <logic>).
+	ethernet = '1'
+	log_file = "UNUSED"
+	memory_type = "XILINX_16X"
+	use_cache = '1'
+Entity <plasma> analyzed. Unit <plasma> generated.
+
+Analyzing generic Entity <mlite_cpu> in library <work> (Architecture <logic>).
+	alu_type = "DEFAULT"
+	memory_type = "XILINX_16X"
+	mult_type = "DEFAULT"
+	pipeline_stages = 2
+	shifter_type = "DEFAULT"
+Entity <mlite_cpu> analyzed. Unit <mlite_cpu> generated.
+
+Analyzing Entity <pc_next> in library <work> (Architecture <logic>).
+Entity <pc_next> analyzed. Unit <pc_next> generated.
+
+Analyzing Entity <mem_ctrl> in library <work> (Architecture <logic>).
+Entity <mem_ctrl> analyzed. Unit <mem_ctrl> generated.
+
+Analyzing Entity <control> in library <work> (Architecture <logic>).
+Entity <control> analyzed. Unit <control> generated.
+
+Analyzing generic Entity <reg_bank> in library <work> (Architecture <ram_block>).
+	memory_type = "XILINX_16X"
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 165: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 182: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 199: Instantiating black box module <RAM16X1D>.
+WARNING:Xst:2211 - "G:/mips/code/trunk/vhdl/reg_bank.vhd" line 216: Instantiating black box module <RAM16X1D>.
+Entity <reg_bank> analyzed. Unit <reg_bank> generated.
+
+Analyzing Entity <bus_mux> in library <work> (Architecture <logic>).
+INFO:Xst:1561 - "G:/mips/code/trunk/vhdl/bus_mux.vhd" line 82: Mux is complete : default of case is discarded
+Entity <bus_mux> analyzed. Unit <bus_mux> generated.
+
+Analyzing generic Entity <alu> in library <work> (Architecture <logic>).
+	alu_type = "DEFAULT"
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing generic Entity <shifter> in library <work> (Architecture <logic>).
+	shifter_type = "DEFAULT"
+Entity <shifter> analyzed. Unit <shifter> generated.
+
+Analyzing generic Entity <mult> in library <work> (Architecture <logic>).
+	mult_type = "DEFAULT"
+Entity <mult> analyzed. Unit <mult> generated.
+
+Analyzing generic Entity <cache> in library <work> (Architecture <logic>).
+	memory_type = "XILINX_16X"
+INFO:Xst:1561 - "G:/mips/code/trunk/vhdl/cache.vhd" line 88: Mux is complete : default of case is discarded
+    Set user-defined property "INIT =  000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "SRVAL =  000" for instance <cache_xilinx.cache_tag> in unit <cache>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <cache_xilinx.cache_tag> in unit <cache>.
+Entity <cache> analyzed. Unit <cache> generated.
+
+Analyzing generic Entity <ram> in library <work> (Architecture <logic>).
+	block_count = 1
+	memory_type = "XILINX_16X"
+    Set user-defined property "INIT =  000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_00 =  AFAFAFAFAFAFAFAFAFAFAFAFAFAFAFAF2308000C241400AC273C243C243C273C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_01 =  8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F8F230C008C8C3CAF00AF00AF2340AFAF" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_02 =  ACACACAC0003373CAC038CAC8CAC8CAC8C243C40034040033423038F038F8F8F" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_03 =  000300AC0300000034038C8C8C8C8C8C8C8C8C8C8C8C3403ACACACACACACACAC" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_04 =  30008C241430008C24AC0094AC2400183C000003241CA424248CAC1824003C00" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_05 =  2410001028300024A0243C0003001030008CAC24AC24003C000003001C240010" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_06 =  1026102C260214002C3A2C3A00000C240200AFAFAFAFAF2724033C000424A024" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_07 =  00142A0000260C0010240C26240C240C001A001600261000102C261026102C00" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_08 =  240C3C240C3C240C3CAF0CAFAFAFAFAFAFAFAF2727038F8F8F028F8F240C240C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_09 =  3C3C003C3C0C003C240C3C3C1430248C3C1030008C343CAC243C240C3C240C3C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0A =  240C3C240C3C240C3C240C3C240C3C240C3C240C3C240C3C240C3C240C3C3C3C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0B =  0C000C020C240C3C00000C240C3C020C26102C2600000C240C3C240C3C240C3C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0C =  000C000C923C10AE000C020C00000C260C02108E0000008C0000243C102C2626" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0D =  1402260C90023C1200000C260C3C100002A210000C020C00000C260C3C10260C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0E =  0202269002021200000C260C00103C140226A002000C3C1200000C260C3C1002" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_0F =  321402240C000C260C8C02260C0214321200000C260C3C10240C000C020C0214" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_10 =  2A14000C00A002363C003C3C103C0C003C000C0014343C000C240C3C3C10260C" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_11 =  3C1030008C343C3C1430008C343C3C1000003C02100200260C00100000142A26" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_12 =  AF272703008F8F8F00140092260C92240C00140024100092AFAF00AF270003AC" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_13 =  8C343C2703008F240CAF2727038F8F8F0206260C24341000102C30022400AFAF" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_14 =  04242424142C24240424AC00248C243C3C00002703008F8C3C10000CAF273003" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_15 =  616D20423A0033322030204A656C62747267650A0000000000000000038C3C24" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_16 =  330A7769796532006F61796531006E706E724F303030206E6569612020740A00" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_17 =  3900736838006979656137617965613673647475350A62697965340079617965" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_18 =  660A0D786E6E0A786E750A0A3D6541206820720A3E00616F446F42316F460075" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000037336820" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "SRVAL =  000" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <block0.ram_byte3> in unit <ram>.
+    Set user-defined property "INIT =  000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_00 =  B8AFAEADACABAAA9A8A7A6A5A4A3A2A1BD000000A560A4A0BD1D8404A5059C1C" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_01 =  B9B8AFAEADACABAAA9A8A7A6A5A4A3A2A1A50086C6C406BB00BB00BA5A1ABFB9" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_02 =  9392919000405A1A06E0A606A606A606A6A50584E0029B401BBD60BB60BBBABF" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_03 =  00E000C4E0000085A2E09F9D9C9E979695949392919002E09F9D9C9E97969594" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_04 =  4200A284404200A2A5A20082A303A2C0020500E084C082C6A5A2A2C002A20205" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_05 =  6200A7406283400540420200E000404200828202820282020400E000C0C60040" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_06 =  000240620300606242026303400000134000B0B1B2B3BFBD42E00204A1A5C262" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_07 =  0040225012310012000400310400040000200013001000004042100002404260" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_08 =  840004840004840004B000B1B2B3B4B5B6B7BFBDBDE0B0B1B240B3BF04000400" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_09 =  1415200106000004840004144342036215404200424202620203840004840004" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0A =  8400048400048400048400048400048400048400048400048400048400041716" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0B =  0040006000840004400000840004000003404202400000840004840004840004" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0C =  400000006404007040000000400000E4000000700040006262034202406203A4" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0D =  4032310044710440400000840004000060700040000000400000E4000400A400" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0E =  3202314271004040000084000000044032316271000004404000008400040071" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_0F =  2240320400400031004471C40071402240400000840004000400400000007140" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_10 =  024000000050715212001304000600000400000043630300008400040400C400" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_11 =  0240420062630302404200424202040000200171405140310000400000400210" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_12 =  BFBDBDE000B0B1BF00400002100004040000510011400002B1BF80B0BD00E044" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_13 =  424202BDE000BF0400BFBDBDE0B0B1BF1101100084840000408244111080B0B1" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_14 =  616303A540C2C6846163404703A24502078000BDE000BF4202400000BFBD42E0" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_15 =  7320666F0A003A3200313875726F6F686F7374470000000000000082E0420284" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_16 =  2E006F74206D2E007264206D2E007374752074303078616B206D726266695700" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_17 =  2E0075652E0074206D772E64206D772E73646F6D2E007974206D2E007464206D" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_18 =  69430A3E2074433E20655600207364006569654120007320526D2032702E006D" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_19 =  2400800000000000000000000000000000000000000000000000000038342077" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000004000080" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "SRVAL =  000" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <block0.ram_byte2> in unit <ram>.
+    Set user-defined property "INIT =  000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_00 =  00000000000000000000000000000000FF00000100FF18000F000F000D008D00" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_01 =  000000000000000000000000000000000000022000002000D800D800FF700000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_02 =  0000000000000010000000000000000000010060006060000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_03 =  0000000000201000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_04 =  000000000000000000000000000028003028000000FF00FF0000000000283028" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_05 =  0000300000003800000D00000000FF00000000000000203020000000FFFF00FF" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_06 =  00FF0000FF200018000000008000020088900000000000FF0D000021FFFF0000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_07 =  00FF009011000291000002FF000200020000000000FF00000000FF00FF000080" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_08 =  0A02000A02000A020000020000000000000000FF000000000010000000020002" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_09 =  0000F810000028100A02000000FF3C00000000000000200000300A02000A0200" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0A =  0B02000B02000B02000B02000B02000B02000B02000B02000B02000B02000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0B =  02200220000C02009800000C02002002FF0000FF8098020C02000C02000B0200" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0C =  200200000000FF00200220008000000C022000000000000018180C00FF00FF0C" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0D =  FF100002001000FF9088000C0200FF00F800FF200220008000000C0200FF0C02" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0E =  108000001088009080000C0200FF00FF10000018000200FF9088000C0200FF10" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_0F =  00FF1000022002000000100C02100000009088000C0200FF00022002200010FF" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_10 =  27000002800010FF00881000FF00002810200000FF561200000C020000FF0C02" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_11 =  20FF00000000202000000000002000FF00F81010FF1080000200000000FF2700" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_12 =  00FF00001000000000FF000000020000020000000000000000008000FF100000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_13 =  00002000000000000200FF000000000010FFFF02000000000000001000880000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_14 =  FFFF0000FF000000FFFF001000000C00103020000000000020FF000200FF0000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_15 =  6866726F0000333A0033206E20616F656D206972000000000000001000001000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_16 =  20007265776F20006420726F20003A69204D680A303174656C6179696F6E6100" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_17 =  20006D63200065776F20200A726F20200A72207020007465776F20006520726F" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_18 =  726F002068206F206820610000736400786E7364000068662020663879200070" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_19 =  202800000805050505050505050508050507070706060606060600003E353169" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000020000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "SRVAL =  000" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <block0.ram_byte1> in unit <ram>.
+    Set user-defined property "INIT =  000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_00 =  4C4844403C3834302C2824201C181410980E000C04FD2A000800200010000001" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_01 =  504C4844403C3834302C2824201C18141000752410200060125C1058FC005450" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_02 =  0C08040000083C0048080C440840043C006000000800000801681360115C5854" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_03 =  00080C000810121900082C2824201C1814100C08040000082C2824201C181410" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_04 =  800000020680000004000000004021140040000802FB00FE04000007FF210040" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_05 =  300221030A0F2507081000000800FC80000000D00020210040000800EFFE00FC" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_06 =  19BF030AD0252625010D010A2500820825251014181C20D810080002F6FF0037" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_07 =  00D2102100013202050832FF203208320008000C00A90F00031AC9149F031A25" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_08 =  DC4300D04300B04300108D14181C2024282C30C82808101418251C200A320D32" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_09 =  0000090002802500F04300000CFF1C000010010000500000FF00EC4300E04300" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0A =  EC4300D44300C04300AC43009443007C43006443004C43003443000443000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0B =  43254325B54443002500C83043002532CF130AD02525822C4300084300FC4300" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0C =  254300B50000A900254325B52500C85443250E000008000021809800BE16CF50" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0D =  FB2B01320021008A2525C86443009100090094254325B52500C8544300A05043" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0E =  2B2101002125082525C86443007000F92B0100210082007A2525C86443008121" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_0F =  0FF22B2032254304B50021744321040F102525C86443005A0A32254325B521FB" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_10 =  1005007D250021FF0F2500002F028E250025A70036783400C878430000407443" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_11 =  00FC020000200000080200002000001200090021EE2A25018200070000F91001" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_12 =  18E020082510141800F500000132000D320003000A0D000014182510E0250800" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_13 =  00200018080010493210E8200810141806F6FC3257300200030A0F061C251014" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_14 =  FEFF6304F6080101FEFF00210300F000002525180800100000FD007D10E80108" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_15 =  0A6C6F7400003932000032200064742020666E65000000000000002108000001" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_16 =  4D00642072724D000A7765724D000A6F4F656500303020646967206E72676900" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_17 =  44000A6B43000A72726D520065726D52006561204A00652072724D000A626572" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_18 =  6D6E00006569750065696C00002072003E20736400000A6C7444724B2043000A" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_19 =  0000207010080808080808080808540808A8500CCCBC906C3C30000020363274" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000101020" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "SRVAL =  000" for instance <block0.ram_byte0> in unit <ram>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <block0.ram_byte0> in unit <ram>.
+Entity <ram> analyzed. Unit <ram> generated.
+
+Analyzing generic Entity <uart> in library <work> (Architecture <logic>).
+	log_file = "UNUSED"
+Entity <uart> analyzed. Unit <uart> generated.
+
+Analyzing Entity <eth_dma> in library <work> (Architecture <logic>).
+Entity <eth_dma> analyzed. Unit <eth_dma> generated.
+
+Analyzing Entity <ddr_ctrl> in library <work> (Architecture <logic>).
+Entity <ddr_ctrl> analyzed. Unit <ddr_ctrl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ddr_ctrl>.
+    Related source file is "G:/mips/code/trunk/vhdl/ddr_ctrl.vhd".
+    Found finite state machine <FSM_0> for signal <state_prev>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 17                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset_in                  (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit tristate buffer for signal <SD_DQ>.
+    Found 1-bit tristate buffer for signal <SD_UDQS>.
+    Found 1-bit tristate buffer for signal <SD_LDM>.
+    Found 1-bit tristate buffer for signal <SD_LDQS>.
+    Found 1-bit tristate buffer for signal <SD_UDM>.
+    Found 52-bit register for signal <address_row>.
+    Found 13-bit 4-to-1 multiplexer for signal <address_row$mux0000> created at line 180.
+    Found 4-bit register for signal <bank_open>.
+    Found 1-bit 4-to-1 multiplexer for signal <bank_open$mux0000> created at line 178.
+    Found 6-bit register for signal <byte_we_reg2>.
+    Found 1-bit register for signal <cke_reg>.
+    Found 1-bit register for signal <clk_p>.
+    Found 3-bit up counter for signal <cycle_count>.
+    Found 3-bit register for signal <cycle_count2>.
+    Found 32-bit register for signal <data_read>.
+    Found 48-bit register for signal <data_write2>.
+    Found 8-bit up counter for signal <refresh_cnt>.
+    Found 13-bit comparator not equal for signal <state_prev$cmp_ne0001> created at line 180.
+    Found 1-bit register for signal <write_active>.
+    Found 1-bit register for signal <write_prev>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred 149 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred  20 Tristate(s).
+Unit <ddr_ctrl> synthesized.
+
+
+Synthesizing Unit <uart>.
+    Related source file is "G:/mips/code/trunk/vhdl/uart.vhd".
+    Found 4-bit down counter for signal <bits_read_reg>.
+    Found 4-bit down counter for signal <bits_write_reg>.
+    Found 8-bit register for signal <data_read_reg>.
+    Found 18-bit register for signal <data_save_reg>.
+    Found 9-bit register for signal <data_write_reg>.
+    Found 10-bit down counter for signal <delay_read_reg>.
+    Found 10-bit register for signal <delay_write_reg>.
+    Found 10-bit adder for signal <delay_write_reg$addsub0000> created at line 83.
+    Found 7-bit updown counter for signal <read_value_reg>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <uart> synthesized.
+
+
+Synthesizing Unit <eth_dma>.
+    Related source file is "G:/mips/code/trunk/vhdl/eth_dma.vhd".
+    Found 2-bit register for signal <rec_clk>.
+    Found 3-bit up counter for signal <rec_cnt>.
+    Found 28-bit register for signal <rec_data>.
+    Found 2-bit register for signal <rec_dma>.
+    Found 1-bit register for signal <rec_done>.
+    Found 32-bit register for signal <rec_store>.
+    Found 14-bit up counter for signal <rec_words>.
+    Found 2-bit register for signal <send_clk>.
+    Found 3-bit up counter for signal <send_cnt>.
+    Found 32-bit register for signal <send_data>.
+    Found 2-bit register for signal <send_dma>.
+    Found 1-bit register for signal <send_enable>.
+    Found 9-bit comparator not equal for signal <send_enable$cmp_ne0000> created at line 121.
+    Found 9-bit comparator equal for signal <send_isr$cmp_eq0000> created at line 158.
+    Found 9-bit register for signal <send_level>.
+    Found 32-bit register for signal <send_read>.
+    Found 9-bit register for signal <send_words>.
+    Found 9-bit adder for signal <send_words$addsub0000> created at line 144.
+    Summary:
+	inferred   3 Counter(s).
+	inferred 152 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <eth_dma> synthesized.
+
+
+Synthesizing Unit <pc_next>.
+    Related source file is "G:/mips/code/trunk/vhdl/pc_next.vhd".
+    Found 1-bit xor2 for signal <pc_inc$xor0000> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0001> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0002> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0003> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0004> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0005> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0006> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0007> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0008> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0009> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0010> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0011> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0012> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0013> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0014> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0015> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0016> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0017> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0018> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0019> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0020> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0021> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0022> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0023> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0024> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0025> created at line 541.
+    Found 1-bit xor2 for signal <pc_inc$xor0026> created at line 541.
+    Found 30-bit register for signal <pc_reg>.
+    Found 1-bit xor2 for signal <result_12$xor0000> created at line 541.
+    Found 1-bit xor2 for signal <result_22$xor0000> created at line 541.
+    Summary:
+	inferred  30 D-type flip-flop(s).
+Unit <pc_next> synthesized.
+
+
+Synthesizing Unit <mem_ctrl>.
+    Related source file is "G:/mips/code/trunk/vhdl/mem_ctrl.vhd".
+    Found 30-bit register for signal <address_reg>.
+    Found 4-bit register for signal <byte_we_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <data_read_var_7$mux0000> created at line 92.
+    Found 1-bit register for signal <mem_state_reg>.
+    Found 32-bit register for signal <next_opcode_reg>.
+    Found 32-bit register for signal <opcode_reg>.
+    Found 32-bit 4-to-1 multiplexer for signal <opcode_reg$mux0000>.
+    Summary:
+	inferred  99 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <mem_ctrl> synthesized.
+
+
+Synthesizing Unit <control>.
+    Related source file is "G:/mips/code/trunk/vhdl/control.vhd".
+    Found 16x4-bit ROM for signal <mem_source_out$mux0000>.
+    Found 32x2-bit ROM for signal <b_source_out$mux0000>.
+    Summary:
+	inferred   2 ROM(s).
+Unit <control> synthesized.
+
+
+Synthesizing Unit <bus_mux>.
+    Related source file is "G:/mips/code/trunk/vhdl/bus_mux.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <b_out>.
+    Found 1-bit 8-to-1 multiplexer for signal <take_branch>.
+    Found 32-bit 4-to-1 multiplexer for signal <a_out>.
+    Found 32-bit comparator equal for signal <is_equal$cmp_eq0000> created at line 111.
+    Summary:
+	inferred   1 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <bus_mux> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "G:/mips/code/trunk/vhdl/alu.vhd".
+    Found 32-bit xor2 for signal <c_alu$xor0000> created at line 36.
+    Found 1-bit xor2 for signal <less_than$xor0000> created at line 32.
+    Found 1-bit xor3 for signal <result_11$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_14$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_17$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_2$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_20$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_23$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_26$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_29$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_5$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result_8$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0001> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0002> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0003> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0004> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0005> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0006> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0007> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0008> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0009> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0010> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0011> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0012> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0013> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0014> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0015> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0016> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0017> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0018> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0019> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0020> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0021> created at line 510.
+    Found 1-bit xor2 for signal <sum$xor0022>.
+    Summary:
+	inferred  32 Xor(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <shifter>.
+    Related source file is "G:/mips/code/trunk/vhdl/shifter.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <c_shift>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <shifter> synthesized.
+
+
+Synthesizing Unit <mult>.
+    Related source file is "G:/mips/code/trunk/vhdl/mult.vhd".
+    Found 1-bit xor2 for signal <a_neg$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0001> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0002> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0003> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0004> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0005> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0006> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0007> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0008> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0009> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0010> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0011> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0012> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0013> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0014> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0015> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0016> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0017> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0018> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0019> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0020> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0021> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0022> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0023> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0024> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0025> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0026> created at line 527.
+    Found 1-bit xor2 for signal <a_neg$xor0027> created at line 527.
+    Found 32-bit register for signal <aa_reg>.
+    Found 1-bit xor2 for signal <b_neg$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0001> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0002> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0003> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0004> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0005> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0006> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0007> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0008> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0009> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0010> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0011> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0012> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0013> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0014> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0015> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0016> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0017> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0018> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0019> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0020> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0021> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0022> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0023> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0024> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0025> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0026> created at line 527.
+    Found 1-bit xor2 for signal <b_neg$xor0027> created at line 527.
+    Found 32-bit register for signal <bb_reg>.
+    Found 1-bit xor2 for signal <c_mult$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0001> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0002> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0003> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0004> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0005> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0006> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0007> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0008> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0009> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0010> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0011> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0012> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0013> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0014> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0015> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0016> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0017> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0018> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0019> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0020> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0021> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0022> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0023> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0024> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0025> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0026> created at line 527.
+    Found 1-bit xor2 for signal <c_mult$xor0027> created at line 527.
+    Found 6-bit register for signal <count_reg>.
+    Found 6-bit subtractor for signal <count_reg$addsub0000> created at line 198.
+    Found 32-bit register for signal <lower_reg>.
+    Found 1-bit register for signal <mode_reg>.
+    Found 1-bit register for signal <negate_reg>.
+    Found 1-bit xor2 for signal <result0_10$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result0_20$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result0_30$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result1_10$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result1_20$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result1_30$xor0000> created at line 527.
+    Found 1-bit xor3 for signal <result2_11$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_14$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_17$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_2$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_20$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_23$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_26$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_29$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_5$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <result2_8$xor0000> created at line 510.
+    Found 1-bit xor2 for signal <result_10$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result_20$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <result_30$xor0000> created at line 527.
+    Found 1-bit register for signal <sign2_reg>.
+    Found 1-bit register for signal <sign_reg>.
+    Found 1-bit xor2 for signal <sign_reg$xor0000> created at line 133.
+    Found 1-bit xor3 for signal <sum$xor0000> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0001> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0002> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0003> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0004> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0005> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0006> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0007> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0008> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0009> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0010> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0011> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0012> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0013> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0014> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0015> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0016> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0017> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0018> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0019> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0020> created at line 510.
+    Found 1-bit xor3 for signal <sum$xor0021> created at line 510.
+    Found 1-bit xor2 for signal <sum$xor0022>.
+    Found 32-bit register for signal <upper_reg>.
+    Found 1-bit xor2 for signal <upper_reg$xor0000> created at line 168.
+    Summary:
+	inferred 138 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Xor(s).
+Unit <mult> synthesized.
+
+
+Synthesizing Unit <cache>.
+    Related source file is "G:/mips/code/trunk/vhdl/cache.vhd".
+WARNING:Xst:647 - Input <cpu_address<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <address_next<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Using one-hot encoding for signal <state>.
+    Using one-hot encoding for signal <state_reg>.
+    Found 9-bit comparator not equal for signal <cache_miss$cmp_ne0000> created at line 67.
+    Found 9-bit register for signal <cache_tag_reg>.
+    Found 4-bit register for signal <state_reg>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <cache> synthesized.
+
+
+Synthesizing Unit <ram>.
+    Related source file is "G:/mips/code/trunk/vhdl/ram_xilinx.vhd".
+WARNING:Xst:647 - Input <address<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <block_enable<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <block_do<7:1>> is used but never assigned. Tied to default value.
+    Found 32-bit 8-to-1 multiplexer for signal <data_read>.
+    Found 3-bit register for signal <block_sel_buf>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <ram> synthesized.
+
+
+Synthesizing Unit <reg_bank>.
+    Related source file is "G:/mips/code/trunk/vhdl/reg_bank.vhd".
+WARNING:Xst:646 - Signal <no_connect> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <intr_enable_reg>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <reg_bank> synthesized.
+
+
+Synthesizing Unit <mlite_cpu>.
+    Related source file is "G:/mips/code/trunk/vhdl/mlite_cpu.vhd".
+    Found 1-bit register for signal <intr_signal>.
+    Found 4-bit up counter for signal <reset_reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <mlite_cpu> synthesized.
+
+
+Synthesizing Unit <plasma>.
+    Related source file is "G:/mips/code/trunk/vhdl/plasma.vhd".
+WARNING:Xst:646 - Signal <cpu_address<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <counter_reg>.
+    Found 1-bit xor2 for signal <counter_reg$xor0000> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0001> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0002> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0003> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0004> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0005> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0006> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0007> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0008> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0009> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0010> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0011> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0012> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0013> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0014> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0015> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0016> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0017> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0018> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0019> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0020> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0021> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0022> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0023> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0024> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0025> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0026> created at line 555.
+    Found 1-bit xor2 for signal <counter_reg$xor0027> created at line 555.
+    Found 32-bit register for signal <gpio0_reg>.
+    Found 8-bit register for signal <irq_mask_reg>.
+    Found 32-bit 4-to-1 multiplexer for signal <ram_data_w>.
+    Found 1-bit xor2 for signal <result_10$xor0000> created at line 555.
+    Found 1-bit xor2 for signal <result_20$xor0000> created at line 555.
+    Found 1-bit xor2 for signal <result_30$xor0000> created at line 555.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <plasma> synthesized.
+
+
+Synthesizing Unit <plasma_3e>.
+    Related source file is "G:/mips/code/trunk/vhdl/plasma_3e.vhd".
+WARNING:Xst:646 - Signal <gpio0_out<31:29>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <gpio0_out<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <address<27:26>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <E_MDIO>.
+    Found 15-bit tristate buffer for signal <SF_D>.
+    Found 1-bit tristate buffer for signal <SPI_MISO>.
+    Found 1-bit register for signal <clk_reg>.
+    Found 2-bit up counter for signal <flash_cnt>.
+    Found 1-bit register for signal <flash_we>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred  17 Tristate(s).
+Unit <plasma_3e> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x4-bit ROM                                          : 1
+ 32x2-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 6-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 11
+ 10-bit down counter                                   : 1
+ 14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 2
+ 4-bit up counter                                      : 1
+ 7-bit updown counter                                  : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 252
+ 1-bit register                                        : 223
+ 10-bit register                                       : 1
+ 13-bit register                                       : 4
+ 2-bit register                                        : 2
+ 28-bit register                                       : 1
+ 3-bit register                                        : 2
+ 30-bit register                                       : 2
+ 32-bit register                                       : 8
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 4
+# Comparators                                          : 5
+ 13-bit comparator not equal                           : 1
+ 32-bit comparator equal                               : 1
+ 9-bit comparator equal                                : 1
+ 9-bit comparator not equal                            : 2
+# Multiplexers                                         : 41
+ 1-bit 4-to-1 multiplexer                              : 34
+ 1-bit 8-to-1 multiplexer                              : 1
+ 13-bit 4-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 4
+ 32-bit 8-to-1 multiplexer                             : 1
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 6
+ 15-bit tristate buffer                                : 1
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 223
+ 1-bit xor2                                            : 158
+ 1-bit xor3                                            : 64
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u2_ddr/state_prev/FSM> on signal <state_prev[1:9]> with one-hot encoding.
+--------------------
+ State | Encoding
+--------------------
+ 0000  | 000000001
+ 0001  | 000000010
+ 0010  | 000001000
+ 0011  | 000010000
+ 0100  | 000100000
+ 0101  | 001000000
+ 0110  | 010000000
+ 0111  | 000000100
+ 1000  | 100000000
+--------------------
+WARNING:Xst:2677 - Node <address_reg_26> of sequential type is unconnected in block <u2_mem_ctrl>.
+WARNING:Xst:2677 - Node <address_reg_27> of sequential type is unconnected in block <u2_mem_ctrl>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x4-bit ROM                                          : 1
+ 32x2-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 6-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 11
+ 10-bit down counter                                   : 1
+ 14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 2
+ 4-bit up counter                                      : 1
+ 7-bit updown counter                                  : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 705
+ Flip-Flops                                            : 705
+# Comparators                                          : 5
+ 13-bit comparator not equal                           : 1
+ 32-bit comparator equal                               : 1
+ 9-bit comparator equal                                : 1
+ 9-bit comparator not equal                            : 2
+# Multiplexers                                         : 41
+ 1-bit 4-to-1 multiplexer                              : 34
+ 1-bit 8-to-1 multiplexer                              : 1
+ 13-bit 4-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 4
+ 32-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 223
+ 1-bit xor2                                            : 158
+ 1-bit xor3                                            : 64
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <plasma_3e> ...
+
+Optimizing unit <eth_dma> ...
+
+Optimizing unit <pc_next> ...
+
+Optimizing unit <mem_ctrl> ...
+
+Optimizing unit <control> ...
+
+Optimizing unit <bus_mux> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <shifter> ...
+
+Optimizing unit <mult> ...
+
+Optimizing unit <ram> ...
+
+Optimizing unit <reg_bank> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <cache> ...
+
+Optimizing unit <mlite_cpu> ...
+
+Optimizing unit <plasma> ...
+WARNING:Xst:2677 - Node <u1_plama_u1_cpu_u2_mem_ctrl_address_reg_27> of sequential type is unconnected in block <plasma_3e>.
+WARNING:Xst:2677 - Node <u1_plama_u1_cpu_u2_mem_ctrl_address_reg_26> of sequential type is unconnected in block <plasma_3e>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block plasma_3e, actual ratio is 38.
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_1 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_2 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_26 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_27 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_28 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_29 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_3 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_30 has been replicated 1 time(s)
+FlipFlop u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 783
+ Flip-Flops                                            : 783
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : plasma_3e.ngr
+Top Level Output File Name         : plasma_3e
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 131
+
+Cell Usage :
+# BELS                             : 4096
+#      GND                         : 1
+#      INV                         : 30
+#      LUT1                        : 38
+#      LUT2                        : 145
+#      LUT2_D                      : 31
+#      LUT2_L                      : 12
+#      LUT3                        : 784
+#      LUT3_D                      : 74
+#      LUT3_L                      : 64
+#      LUT4                        : 2003
+#      LUT4_D                      : 232
+#      LUT4_L                      : 180
+#      MUXCY                       : 79
+#      MUXF5                       : 371
+#      VCC                         : 1
+#      XORCY                       : 51
+# FlipFlops/Latches                : 783
+#      FD                          : 3
+#      FDC                         : 229
+#      FDC_1                       : 39
+#      FDCE                        : 274
+#      FDCE_1                      : 18
+#      FDE                         : 209
+#      FDP                         : 3
+#      FDPE                        : 8
+# RAMS                             : 133
+#      RAM16X1D                    : 128
+#      RAMB16_S9                   : 5
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 130
+#      IBUF                        : 22
+#      IOBUF                       : 33
+#      OBUF                        : 71
+#      OBUFT                       : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1876  out of   4656    40%  
+ Number of Slice Flip Flops:            783  out of   9312     8%  
+ Number of 4 input LUTs:               3849  out of   9312    41%  
+    Number used as logic:              3593
+    Number used as RAMs:                256
+ Number of IOs:                         131
+ Number of bonded IOBs:                 131  out of    232    56%  
+ Number of BRAMs:                         5  out of     20    25%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_50MHZ                          | BUFGP                  | 94    |
+clk_reg1                           | BUFG                   | 822   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------+-------------------------------------------+-------+
+Control Signal                                       | Buffer(FF name)                           | Load  |
+-----------------------------------------------------+-------------------------------------------+-------+
+ROT_CENTER                                           | IBUF                                      | 296   |
+u1_plama_u1_cpu_reset(u1_plama_u1_cpu_reset_or0000:O)| NONE(u1_plama_u1_cpu_u1_pc_next_pc_reg_10)| 275   |
+-----------------------------------------------------+-------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 27.555ns (Maximum Frequency: 36.291MHz)
+   Minimum input arrival time before clock: 17.354ns
+   Maximum output required time after clock: 17.697ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50MHZ'
+  Clock period: 8.399ns (frequency: 119.055MHz)
+  Total number of paths / destination ports: 210 / 97
+-------------------------------------------------------------------------
+Delay:               4.200ns (Levels of Logic = 1)
+  Source:            clk_reg (FF)
+  Destination:       u2_ddr_data_write2_9 (FF)
+  Source Clock:      CLK_50MHZ rising
+  Destination Clock: CLK_50MHZ falling
+
+  Data Path: clk_reg to u2_ddr_data_write2_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             40   0.591   1.265  clk_reg (clk_reg1)
+     INV:I->O             19   0.704   1.085  u2_ddr_clk_inv1_INV_0 (u2_ddr_clk_inv)
+     FDCE_1:CE                 0.555          u2_ddr_data_write2_0
+    ----------------------------------------
+    Total                      4.200ns (1.850ns logic, 2.350ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_reg1'
+  Clock period: 27.555ns (frequency: 36.291MHz)
+  Total number of paths / destination ports: 568540508 / 2501
+-------------------------------------------------------------------------
+Delay:               27.555ns (Levels of Logic = 19)
+  Source:            u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_31 (FF)
+  Destination:       u1_plama_opt_cache2.u_cache_cache_xilinx.cache_tag (RAM)
+  Source Clock:      clk_reg1 rising
+  Destination Clock: clk_reg1 rising
+
+  Data Path: u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_31 to u1_plama_opt_cache2.u_cache_cache_xilinx.cache_tag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.591   1.072  u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_31 (u1_plama_u1_cpu_u2_mem_ctrl_opcode_reg_31)
+     LUT4_D:I3->O         18   0.704   1.103  u1_plama_u1_cpu_u3_control_alu_func_cmp_eq000011 (u1_plama_u1_cpu_u3_control_rt_index_and0000)
+     LUT3_D:I2->O         13   0.704   0.987  u1_plama_u1_cpu_u3_control_alu_func_cmp_eq00341 (u1_plama_u1_cpu_u3_control_alu_func_cmp_eq0034)
+     LUT4_D:I3->O          5   0.704   0.668  u1_plama_u1_cpu_u3_control_rs_index<3> (u1_plama_u1_cpu_rs_index<3>)
+     LUT4:I2->O           16   0.704   1.034  u1_plama_u1_cpu_u4_reg_bank_addr_read1<2>1_1 (u1_plama_u1_cpu_u4_reg_bank_addr_read1<2>1)
+     RAM16X1D:DPRA2->DPO    1   0.704   0.455  u1_plama_u1_cpu_u4_reg_bank_xilinx_16x1d.reg_loop[1].reg_bit1a (u1_plama_u1_cpu_u4_reg_bank_data_out1A<1>)
+     LUT4_D:I2->O          2   0.704   0.451  u1_plama_u1_cpu_u4_reg_bank_reg_source_out<1>1 (u1_plama_u1_cpu_reg_source<1>)
+     LUT4_D:I3->O         11   0.704   0.937  u1_plama_u1_cpu_u5_bus_mux_Mmux_a_out141_1 (u1_plama_u1_cpu_u5_bus_mux_Mmux_a_out141)
+     LUT4:I3->O            1   0.704   0.455  u1_plama_u1_cpu_u6_alu_carry_in_or0000_SW0_SW0 (N1119)
+     LUT3:I2->O            5   0.704   0.668  u1_plama_u1_cpu_u6_alu_carry_in_or0000 (u1_plama_u1_cpu_u6_alu_carry_in_or0000)
+     LUT3:I2->O            8   0.704   0.792  u1_plama_u1_cpu_u6_alu_carry_in_or00181 (u1_plama_u1_cpu_u6_alu_carry_in_or0018)
+     LUT3_D:I2->O         11   0.704   0.968  u1_plama_u1_cpu_u6_alu_carry_in_or0002 (u1_plama_u1_cpu_u6_alu_carry_in_or0002)
+     LUT3:I2->O            3   0.704   0.566  u1_plama_u1_cpu_u6_alu_carry_in_or0041 (u1_plama_u1_cpu_u6_alu_carry_in_or0041)
+     LUT3:I2->O            1   0.704   0.000  u1_plama_u1_cpu_u1_pc_next_pc_future<21>11 (u1_plama_u1_cpu_u1_pc_next_pc_future<21>1)
+     MUXF5:I1->O           2   0.321   0.482  u1_plama_u1_cpu_u1_pc_next_pc_future<21>1_f5 (u1_plama_u1_cpu_u1_pc_next_N35)
+     LUT4:I2->O            1   0.704   0.000  u1_plama_u1_cpu_u2_mem_ctrl_address_var_mux0003<19>14_F (N1972)
+     MUXF5:I0->O           3   0.321   0.535  u1_plama_u1_cpu_u2_mem_ctrl_address_var_mux0003<19>14 (u1_plama_address_next<21>)
+     LUT4:I3->O            4   0.704   0.591  u1_plama_opt_cache2.u_cache_cache_access_cmp_eq000052 (u1_plama_opt_cache2.u_cache_cache_access_cmp_eq000052)
+     LUT4_D:I3->O         10   0.704   0.917  u1_plama_opt_cache2.u_cache_cache_access_cmp_eq0000118 (u1_plama_opt_cache2.u_cache_cache_access_cmp_eq0000118)
+     LUT4:I2->O            1   0.704   0.420  u1_plama_opt_cache2.u_cache_cache_we1 (u1_plama_opt_cache2.u_cache_cache_we)
+     RAMB16_S9:WE              1.253          u1_plama_opt_cache2.u_cache_cache_xilinx.cache_tag
+    ----------------------------------------
+    Total                     27.555ns (14.454ns logic, 13.101ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 65 / 65
+-------------------------------------------------------------------------
+Offset:              5.036ns (Levels of Logic = 2)
+  Source:            ROT_CENTER (PAD)
+  Destination:       u2_ddr_data_read_28 (FF)
+  Destination Clock: CLK_50MHZ rising
+
+  Data Path: ROT_CENTER to u2_ddr_data_read_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           309   1.218   1.525  ROT_CENTER_IBUF (ROT_CENTER_IBUF)
+     LUT4:I0->O           16   0.704   1.034  u2_ddr_data_read_29_and00001 (u2_ddr_data_read_29_and0000)
+     FDE:CE                    0.555          u2_ddr_data_read_29
+    ----------------------------------------
+    Total                      5.036ns (2.477ns logic, 2.559ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_reg1'
+  Total number of paths / destination ports: 3837 / 542
+-------------------------------------------------------------------------
+Offset:              17.354ns (Levels of Logic = 12)
+  Source:            ROT_CENTER (PAD)
+  Destination:       u1_plama_u2_ram_block0.ram_byte3 (RAM)
+  Destination Clock: clk_reg1 rising
+
+  Data Path: ROT_CENTER to u1_plama_u2_ram_block0.ram_byte3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           309   1.218   1.429  ROT_CENTER_IBUF (ROT_CENTER_IBUF)
+     LUT2:I1->O            1   0.704   0.424  u1_plama_u1_cpu_reset_or0000_SW0 (N189)
+     LUT4:I3->O          292   0.704   1.423  u1_plama_u1_cpu_reset_or0000 (u1_plama_u1_cpu_reset)
+     LUT4:I1->O           27   0.704   1.296  u1_plama_u1_cpu_u1_pc_next_pc_future<10>11 (u1_plama_u1_cpu_u1_pc_next_N14)
+     LUT3:I2->O            1   0.704   0.000  u1_plama_u1_cpu_u1_pc_next_pc_future<29>11_SW0_F (N2022)
+     MUXF5:I0->O           2   0.321   0.526  u1_plama_u1_cpu_u1_pc_next_pc_future<29>11_SW0 (N592)
+     LUT2:I1->O            1   0.704   0.455  u1_plama_u1_cpu_u2_mem_ctrl_address_var_mux0003<27>_SW0_SW0 (N745)
+     LUT4:I2->O           11   0.704   0.937  u1_plama_u1_cpu_u2_mem_ctrl_address_var_mux0003<27> (u1_plama_address_next<29>)
+     LUT4_L:I3->LO         1   0.704   0.135  u1_plama_opt_cache2.u_cache_cache_access_cmp_eq0000171_SW6 (N986)
+     LUT4:I2->O            2   0.704   0.451  u1_plama_opt_cache2.u_cache_cache_access_cmp_eq0000118_SW2_SW0_SW0 (N1794)
+     LUT4_D:I3->O         15   0.704   1.052  u1_plama_Mmux_ram_data_w1011 (u1_plama_N11)
+     LUT3:I2->O            1   0.704   0.420  u1_plama_Mmux_ram_data_w41 (u1_plama_ram_data_w<10>)
+     RAMB16_S9:DI2             0.227          u1_plama_u2_ram_block0.ram_byte1
+    ----------------------------------------
+    Total                     17.354ns (8.806ns logic, 8.548ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_reg1'
+  Total number of paths / destination ports: 49161 / 104
+-------------------------------------------------------------------------
+Offset:              17.697ns (Levels of Logic = 17)
+  Source:            u1_plama_dma_gen2.u4_eth_send_dma_1 (FF)
+  Destination:       SD_A<9> (PAD)
+  Source Clock:      clk_reg1 rising
+
+  Data Path: u1_plama_dma_gen2.u4_eth_send_dma_1 to SD_A<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            65   0.591   1.308  u1_plama_dma_gen2.u4_eth_send_dma_1 (u1_plama_dma_gen2.u4_eth_send_dma_1)
+     LUT4:I2->O           32   0.704   1.297  u1_plama_dma_gen2.u4_eth_address<11>1 (address<11>)
+     LUT3:I2->O            1   0.704   0.000  u2_ddr_Mmux_address_row_mux0000_34 (u2_ddr_Mmux_address_row_mux0000_34)
+     MUXF5:I1->O           1   0.321   0.455  u2_ddr_Mmux_address_row_mux0000_2_f5_3 (u2_ddr_address_row_mux0000<1>)
+     LUT4:I2->O            1   0.704   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_lut<0> (u2_ddr_Mcompar_state_prev_cmp_ne0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<0> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<1> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<2> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<3> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<4> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<5> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<5>)
+     MUXCY:CI->O           7   0.459   0.712  u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<6> (u2_ddr_Mcompar_state_prev_cmp_ne0001_cy<6>)
+     LUT4:I3->O            1   0.704   0.455  u2_ddr_command_mux0009<0>68 (u2_ddr_command_mux0009<0>68)
+     LUT4:I2->O           15   0.704   1.192  u2_ddr_command_mux0009<0>74 (SD_WE_OBUF)
+     LUT4:I0->O           21   0.704   1.207  u2_ddr_SD_A_or0000 (u2_ddr_SD_A_or0000)
+     LUT4:I1->O            1   0.704   0.000  u2_ddr_SD_A<9>11 (u2_ddr_SD_A<9>1)
+     MUXF5:I1->O           1   0.321   0.420  u2_ddr_SD_A<9>1_f5 (SD_A_9_OBUF)
+     OBUF:I->O                 3.272          SD_A_9_OBUF (SD_A<9>)
+    ----------------------------------------
+    Total                     17.697ns (10.651ns logic, 7.046ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50MHZ'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              5.574ns (Levels of Logic = 2)
+  Source:            u2_ddr_clk_p (FF)
+  Destination:       SD_CK_N (PAD)
+  Source Clock:      CLK_50MHZ rising
+
+  Data Path: u2_ddr_clk_p to SD_CK_N
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.587  u2_ddr_clk_p (u2_ddr_clk_p)
+     INV:I->O              1   0.704   0.420  u2_ddr_SD_CK_N1_INV_0 (SD_CK_N_OBUF)
+     OBUF:I->O                 3.272          SD_CK_N_OBUF (SD_CK_N)
+    ----------------------------------------
+    Total                      5.574ns (4.567ns logic, 1.007ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 113.00 secs
+Total CPU time to Xst completion: 113.13 secs
+ 
+--> 
+
+Total memory usage is 290800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  142 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
