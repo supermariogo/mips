@@ -1,17 +1,23 @@
 MIPS Plasma
-==========
+====================================================================================================
 
 32 bits MIPS processor  implementation on Xilinx Sparten 3E
 
-     Support all MIPS user mode instructions except unaligned load and store operations
-     3 stages pipeline and direct-mapped 1 level cache
-     Peripherals including interrupt controller, UART, SRAM or DDR SDRAM controller and Ethernet controller 
-     Synthesis on Xilinx Spartan 3E
-     Boot loader for ELF programs and kernel
-     Real time operating system running on it
+Support all MIPS user mode instructions except unaligned load and store operations
+
+3 stages pipeline and direct-mapped 1 level cache
+
+Peripherals including interrupt controller, UART, SRAM or DDR SDRAM controller and Ethernet controller 
+
+Synthesis on Xilinx Spartan 3E
+
+Boot loader for ELF programs and kernel
+
+Real time operating system running on it
 
 
-The project is based on opensource project Plasma and implements a MIPS instruction set compatible processor. 
+The project is based on opensource project Plasma and implements a MIPS instruction set compatible processor.
+
 From http://opencores.org/project,plasma,overview
 
 The includes MIPS processor sofeware modeling, hardware implementation and system level verification.
