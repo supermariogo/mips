@@ -1,7 +1,8 @@
 MIPS Plasma
-====================================================================================================
+=====================================
 
 32 bits MIPS processor  implementation on Xilinx Sparten 3E
+-------------------------------------
 
 Support all MIPS user mode instructions except unaligned load and store operations
 
@@ -17,6 +18,7 @@ Real time operating system running on it
 
 
 The project is based on opensource project Plasma and implements a MIPS instruction set compatible processor.
+-------------------------------------
 
 From http://opencores.org/project,plasma,overview
 
