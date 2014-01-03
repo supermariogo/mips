@@ -30,3 +30,9 @@ Third, sytem-level verification. In this secion, three verification schemes are 
 
 Finally, a real time operating system is deployed on the FPGA board, controlling all the hardware resources.
 
+###files:
+singlecycle: a pratice for learning VHDL
+
+VHDL: source code
+
+Chinese note: http://note.youdao.com/share/?id=5520322d335757e56ab8397114f5c44c&type=note
