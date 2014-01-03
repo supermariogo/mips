@@ -35,4 +35,7 @@ singlecycle: a pratice for learning VHDL
 
 VHDL: source code
 
-Chinese note: http://note.youdao.com/share/?id=5520322d335757e56ab8397114f5c44c&type=note
+Chinese note: 
+http://note.youdao.com/share/?id=5520322d335757e56ab8397114f5c44c&type=note
+
+http://note.youdao.com/share/?id=059860c36bb92dd820fcdc0537284963&type=note
